@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CalculosMatematicosAPP</string>
+    <string name="txtNumero"> Numero_1 </string>
+
 </resources>
