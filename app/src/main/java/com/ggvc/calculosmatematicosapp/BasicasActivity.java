@@ -18,16 +18,19 @@ public class BasicasActivity extends AppCompatActivity {
         setContentView(R.layout.activity_basicas);
         edNum1=findViewById(R.id.txtNum1);
         edNum2=findViewById(R.id.txtNum2);
+
         edResul=findViewById(R.id.txtNum3);
         btSumar=findViewById(R.id.btnSuma);
         btRestar=findViewById(R.id.btnRestar);
         btMultiplicar=findViewById(R.id.btnMultiplicar);
         btDividir=findViewById(R.id.btnDividir);
-        double n1=Double.parseDouble(edNum1.getText().toString());
-        double n2=Double.parseDouble(edNum2.getText().toString());
+
+
         btSumar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                double n1=Double.parseDouble(edNum1.getText().toString());
+                double n2=Double.parseDouble(edNum2.getText().toString());
                 double suma=n1+n2;
                 edResul.setText("LA SUMA ES:"+suma);
             }
@@ -35,6 +38,8 @@ public class BasicasActivity extends AppCompatActivity {
         btRestar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                double n1=Double.parseDouble(edNum1.getText().toString());
+                double n2=Double.parseDouble(edNum2.getText().toString());
                 double resta=n1-n2;
                 edResul.setText("LA RESTA ES:"+resta);
             }
@@ -42,6 +47,8 @@ public class BasicasActivity extends AppCompatActivity {
         btMultiplicar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                double n1=Double.parseDouble(edNum1.getText().toString());
+                double n2=Double.parseDouble(edNum2.getText().toString());
                 double multiplicar=n1*n2;
                 edResul.setText("LA MULTIPLICACIÓN ES:"+multiplicar);
 
@@ -50,6 +57,8 @@ public class BasicasActivity extends AppCompatActivity {
         btDividir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                double n1=Double.parseDouble(edNum1.getText().toString());
+                double n2=Double.parseDouble(edNum2.getText().toString());
                 if(n2>0){
                     double dividir=n1/n2;
                     edResul.setText("LA DIVISIÓN ES:"+dividir);
@@ -58,8 +67,6 @@ public class BasicasActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
-
 
 }
