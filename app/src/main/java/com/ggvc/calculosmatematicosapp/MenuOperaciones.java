@@ -1,7 +1,9 @@
 package com.ggvc.calculosmatematicosapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.TextView;
@@ -33,5 +35,37 @@ public class MenuOperaciones extends AppCompatActivity {
             button.setLayoutParams(params);
             gridLayout.addView(button);
         }
+
+        Button buttonDivision = findViewById(R.id.btn_said);
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
 }

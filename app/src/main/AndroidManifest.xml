@@ -12,32 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculosMatematicosAPP"
         tools:targetApi="31">
-<<<<<<< HEAD
+
         <activity
             android:name=".ComprobacionDePrimos"
-            android:exported="true">
-
-
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            android:exported="false">
 
         </activity>
 
 
 
 
-
-
-
-    </application>
-
-
-
-
-=======
         <activity android:name=".MenuOperaciones"
             android:exported="true">
             <intent-filter>
@@ -46,6 +30,6 @@
             </intent-filter>
         </activity>
     </application>
->>>>>>> d555983855ba0c611c4cbeb327ac6fffbd9689f6
+
 
 </manifest>
