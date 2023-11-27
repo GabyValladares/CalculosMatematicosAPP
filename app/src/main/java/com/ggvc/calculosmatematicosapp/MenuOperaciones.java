@@ -20,12 +20,11 @@ public class MenuOperaciones extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_operaciones);
 
-        // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button2 = findViewById(R.id.button2);
 
-        // Configurar el título
+
         titleTextView.setText("Título de la Actividad");
 
 
