@@ -1,7 +1,9 @@
 package com.ggvc.calculosmatematicosapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.TextView;
@@ -18,7 +20,7 @@ public class MenuOperaciones extends AppCompatActivity {
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
-
+        Button btOperacionesBasicas=findViewById(R.id.btnOperacionesBasicas);
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
 
@@ -33,5 +35,14 @@ public class MenuOperaciones extends AppCompatActivity {
             button.setLayoutParams(params);
             gridLayout.addView(button);
         }
+
+        btOperacionesBasicas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MenuOperaciones.class, BasicasActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }
