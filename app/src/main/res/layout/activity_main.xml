@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E7F4FA"
-    android:onClick="calcula"
-    tools:context=".teoremaPitagoras">
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblResultado2"
+        android:layout_width="221dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/txtladoC"
+        android:id="@+id/txtladoC2"
         android:layout_width="214dp"
         android:layout_height="56dp"
         android:layout_marginTop="320dp"
@@ -23,7 +30,7 @@
         tools:text="C" />
 
     <TextView
-        android:id="@+id/lblTitulo"
+        android:id="@+id/lblTitulo2"
         android:layout_width="244dp"
         android:layout_height="69dp"
         android:layout_marginTop="68dp"
@@ -37,7 +44,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblLadoA"
+        android:id="@+id/lblLadoA2"
         android:layout_width="129dp"
         android:layout_height="40dp"
         android:layout_marginTop="180dp"
@@ -49,7 +56,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblLadoB"
+        android:id="@+id/lblLadoB2"
         android:layout_width="129dp"
         android:layout_height="38dp"
         android:layout_marginTop="256dp"
@@ -61,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblLadoC"
+        android:id="@+id/lblLadoC2"
         android:layout_width="128dp"
         android:layout_height="51dp"
         android:layout_marginTop="320dp"
@@ -73,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtladoA"
+        android:id="@+id/txtladoA2"
         android:layout_width="209dp"
         android:layout_height="59dp"
         android:layout_marginTop="172dp"
@@ -88,7 +95,7 @@
         tools:text="A" />
 
     <EditText
-        android:id="@+id/txtladoB"
+        android:id="@+id/txtladoB2"
         android:layout_width="211dp"
         android:layout_height="60dp"
         android:layout_marginTop="244dp"
@@ -102,28 +109,13 @@
         tools:text="B" />
 
     <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="127dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="144dp"
+        android:id="@+id/btnCalcula"
+        android:layout_width="110dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="84dp"
         android:onClick="calcula"
         android:text="CALCULAR"
-        android:textAlignment="center"
-        android:textColor="#1B1919"
-        app:backgroundTint="#CFB1B1"
-        app:iconTint="#FFF6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/lblResultado"
-        android:layout_width="84dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="260dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
