@@ -18,7 +18,7 @@ public class TriangulosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_triangulos);
+        setContentView(R.layout.activity_triangulo);
         txtAltura = findViewById(R.id.txtAltura);
         txtBase =findViewById(R.id.txtBase);
         btnEquilatero = findViewById(R.id.btnEquilatero);
