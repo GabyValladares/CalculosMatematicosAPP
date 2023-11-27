@@ -27,6 +27,7 @@ public class MenuOperaciones extends AppCompatActivity {
         Button btnPrimos = findViewById(R.id.btnNPrimos);
         Button buttonDivision = findViewById(R.id.btn_said);
         Button btformulag = findViewById(R.id.btnformulageneral);
+        Button btnTrinomio = findViewById(R.id.btnTrinomio);
 
         btformulag.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,10 +36,6 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
         // Configurar el OnClickListener para el Button2
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +45,7 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        GridLayout gridLayout = findViewById(R.id.gridLayout);
 
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
@@ -60,7 +58,6 @@ public class MenuOperaciones extends AppCompatActivity {
         btnPrimos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
                 startActivity(intent);
             }
@@ -69,9 +66,15 @@ public class MenuOperaciones extends AppCompatActivity {
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+                startActivity(intent);
+            }
+        });
 
+        btnTrinomio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MenuOperaciones.this,MultiplicacionMonomios.class);
                 startActivity(intent);
             }
         });
