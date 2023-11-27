@@ -2,12 +2,16 @@ package com.ggvc.calculosmatematicosapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class FormulaGeneral extends AppCompatActivity {
+
+    Button btregresa;
 
     EditText numeroa,numerob,numeroc;
 
@@ -23,6 +27,15 @@ public class FormulaGeneral extends AppCompatActivity {
 
         positivo = findViewById(R.id.txtposi);
         negativo = findViewById(R.id.txtnega);
+        btregresa = findViewById(R.id.btnregresa);
+
+        btregresa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FormulaGeneral.this, MenuOperaciones.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void calculaFormula(View view) {
