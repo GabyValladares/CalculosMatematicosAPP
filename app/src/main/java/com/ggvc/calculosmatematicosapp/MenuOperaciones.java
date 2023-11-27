@@ -47,8 +47,37 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
+        Button buttonDivision = findViewById(R.id.btn_said);
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+
+                startActivity(intent);
+            }
+        });
 
 
-        }
+
+
+
+
+
+
+
+
+
 
     }
+
+
+
+
+
+
+
+
+}
+
