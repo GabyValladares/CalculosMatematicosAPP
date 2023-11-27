@@ -2,11 +2,11 @@ package com.ggvc.calculosmatematicosapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.view.View;
-
+import android.content.Intent;
 
 public class Factorial extends AppCompatActivity {
 
@@ -18,7 +18,6 @@ public class Factorial extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_factorial);
 
-        setContentView(R.layout.activity_factorial);
 
         // Obtén referencias a los elementos de la interfaz
         edNum1 = findViewById(R.id.txtNumero);
@@ -26,6 +25,7 @@ public class Factorial extends AppCompatActivity {
 
         // Obtén referencia al botón de cálculo
         Button btnCalcular = findViewById(R.id.btnCalcular);
+        Button btnRegresar = findViewById(R.id.btnRegresar);
 
         // Asigna un OnClickListener al botón
         btnCalcular.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +49,19 @@ public class Factorial extends AppCompatActivity {
                 }
             }
         });
+
+
+        // Asigna un OnClickListener al botón "Regresar"
+            btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Factorial.this, MenuOperaciones.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
     private long calcularFactorial(int n) {
         if (n == 0 || n == 1) {
@@ -59,4 +71,7 @@ public class Factorial extends AppCompatActivity {
         }
 
     }
+
+
 }
+
