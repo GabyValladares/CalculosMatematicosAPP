@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import com.bumptech.glide.Glide;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bumptech.glide.Glide;
+
 
 public class MenuOperaciones extends AppCompatActivity {
 
@@ -24,6 +24,7 @@ public class MenuOperaciones extends AppCompatActivity {
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button2 = findViewById(R.id.button2);
+        Button btnPrimos = findViewById(R.id.btnNPrimos);
 
         Button btformulag = findViewById(R.id.btnformulageneral);
 
@@ -34,6 +35,9 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
 
         // Configurar el OnClickListener para el Button2
         button2.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +57,16 @@ public class MenuOperaciones extends AppCompatActivity {
                 .asGif()
                 .load(R.drawable.lineas)
                 .into(gifBackground);
+        btnPrimos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
+                startActivity(intent);
+            }
+        });
+
+
+        }
     }
-}
+

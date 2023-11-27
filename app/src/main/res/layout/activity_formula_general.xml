@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnregresar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/implementos_escritura_naranja_pizarra"
@@ -10,39 +11,25 @@
     tools:layout_editor_absoluteY="57dp">
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="178dp"
+        android:id="@+id/txtnega"
+        android:layout_width="180dp"
         android:layout_height="35dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="572dp"
-        android:background="#673AB7"
-        android:text="RESULTADO NEGATIVO :"
-        android:textColor="#FFFFFF"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="660dp"
+        android:background="#F3F2F4"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="178dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="572dp"
-        android:background="#673AB7"
-        android:text="RESULTADO POSITIVO :"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="NEGATIVO" />
 
     <TextView
         android:id="@+id/txtposi"
         android:layout_width="180dp"
         android:layout_height="33dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="616dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="660dp"
         android:background="#FFFFFF"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -52,18 +39,32 @@
         tools:text="POSITIVO" />
 
     <TextView
-        android:id="@+id/txtnega"
-        android:layout_width="180dp"
+        android:id="@+id/textView8"
+        android:layout_width="178dp"
         android:layout_height="35dp"
-        android:layout_marginStart="220dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="616dp"
-        android:background="#F3F2F4"
-        android:textColor="@color/black"
+        android:background="#673AB7"
+        android:text="RESULTADO POSITIVO :"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="NEGATIVO" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="616dp"
+        android:background="#673AB7"
+        android:text="RESULTADO NEGATIVO :"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/ednumeroc"
@@ -169,6 +170,31 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:backgroundTint="#722EEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="215dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="204dp"
+        android:background="@android:drawable/ic_menu_send"
+        android:onClick="calculaFormula"
+        android:text="CALCULAR"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#722EEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="127dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="160dp"
+        android:text="REGRESAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
