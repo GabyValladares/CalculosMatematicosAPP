@@ -6,9 +6,13 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class MenuOperaciones extends AppCompatActivity {
 
@@ -19,29 +23,25 @@ public class MenuOperaciones extends AppCompatActivity {
 
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
+
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btnFibo=findViewById(R.id.btnFibo);
+
+        ImageView gifBackground = findViewById(R.id.gifBackground);
+        Button button2 = findViewById(R.id.button2);
+
 
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
 
-        // Agregar botones al GridLayout
-        for (int i = 1; i <= 12; i++) {
-            Button button = new Button(this);
-            button.setText("Botón " + i);
+        // Cargar el GIF en el ImageView usando Glide
 
-            // Configurar el botón en el GridLayout
-            GridLayout.LayoutParams params = new GridLayout.LayoutParams();
-            params.setGravity(Gravity.FILL);
-            button.setLayoutParams(params);
-            gridLayout.addView(button);
-        }
-        btnFibo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MenuOperaciones.this,FibonacciActivity.class);
-                startActivity(intent);
-            }
-        });
+
+
+
+    }
+    public void FibonacciI(View v){
+        Intent in = new  Intent(MenuOperaciones.this, FibonacciActivity.class);
+        startActivity(in);
     }
 }
