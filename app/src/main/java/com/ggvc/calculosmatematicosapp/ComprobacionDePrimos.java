@@ -2,6 +2,7 @@ package com.ggvc.calculosmatematicosapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +11,9 @@ import android.widget.TextView;
 
 public class ComprobacionDePrimos extends AppCompatActivity {
 
-    private EditText txtNumero;
-    private Button button;
-    private TextView lblRespuesta, lblRespuestaSuma, lblRespuestaRaizCuadrada;
+     EditText txtNumero;
+     Button button;
+     TextView lblRespuesta, lblRespuestaSuma, lblRespuestaRaizCuadrada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,25 @@ public class ComprobacionDePrimos extends AppCompatActivity {
                 comprobarNumerosPrimos();
             }
         });
+
+
+
+        Button buttonRe = findViewById(R.id.btn_regresar);
+
+        buttonRe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(ComprobacionDePrimos.this, MenuOperaciones.class);
+
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 
     private void comprobarNumerosPrimos() {
@@ -92,6 +112,7 @@ public class ComprobacionDePrimos extends AppCompatActivity {
         return sumaPrimos;
     }
     private double calcularRaizCuadrada(int numero) {
+
         return Math.sqrt(numero);
     }
 }
