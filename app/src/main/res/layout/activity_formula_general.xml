@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/composicion_investigacion_dia_mundial_ciencia__1_"
+    android:background="@drawable/implementos_escritura_naranja_pizarra"
     tools:context=".FormulaGeneral"
     tools:layout_editor_absoluteX="2dp"
     tools:layout_editor_absoluteY="57dp">
@@ -159,11 +159,11 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="209dp"
-        android:layout_height="97dp"
+        android:layout_width="215dp"
+        android:layout_height="116dp"
         android:layout_marginStart="112dp"
-        android:layout_marginBottom="220dp"
-        android:background="@drawable/double_arrow_143292"
+        android:layout_marginBottom="204dp"
+        android:background="@android:drawable/ic_menu_send"
         android:onClick="calculaFormula"
         android:text="CALCULAR"
         android:textSize="20sp"
