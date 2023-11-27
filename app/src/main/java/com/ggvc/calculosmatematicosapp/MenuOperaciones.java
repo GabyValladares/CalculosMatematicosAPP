@@ -25,7 +25,7 @@ public class MenuOperaciones extends AppCompatActivity {
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button2 = findViewById(R.id.button2);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
-
+        Button buttonDivision = findViewById(R.id.btn_said);
         Button btformulag = findViewById(R.id.btnformulageneral);
 
         btformulag.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +66,15 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        }
+                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+
+                startActivity(intent);
+            }
+        });
     }
+}
 

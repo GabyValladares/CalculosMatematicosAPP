@@ -27,7 +27,7 @@ public class FormulaGeneral extends AppCompatActivity {
 
         positivo = findViewById(R.id.txtposi);
         negativo = findViewById(R.id.txtnega);
-        btregresa = findViewById(R.id.btnregresar);
+        btregresa = findViewById(R.id.btnregresa);
 
         btregresa.setOnClickListener(new View.OnClickListener() {
             @Override
