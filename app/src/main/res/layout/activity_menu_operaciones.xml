@@ -105,7 +105,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="552dp"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintEnd_toStartOf="@+id/btn_said"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -135,12 +135,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btn_said"
         android:layout_width="0dp"
         android:layout_height="79dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="552dp"
-        android:text="Button"
+        android:text="Numero Primos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button11"

@@ -1,6 +1,8 @@
 package com.ggvc.calculosmatematicosapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +20,7 @@ public class MultiplicacionMonomios extends AppCompatActivity {
         EditText editTextUno = findViewById(R.id.txtnumeroone);
         EditText editTextDos = findViewById(R.id.txtnumerotwo);
         Button buttonCalcular = findViewById(R.id.bttcalcularmono);
+        Button bottonRegresar = findViewById(R.id.bttregresar);
         TextView textViewRespuesta = findViewById(R.id.lblres);
 
 
@@ -45,5 +48,14 @@ public class MultiplicacionMonomios extends AppCompatActivity {
                 }
             }
         });
+        bottonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MultiplicacionMonomios.this, MenuOperaciones.class);
+
+                startActivity(intent);
+            }
+        });
     }
+
 }

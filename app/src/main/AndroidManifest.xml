@@ -19,6 +19,14 @@
         <activity
             android:name=".TinomioCuadradoPerfecto"
             android:exported="true"/>
+        <activity
+            android:name=".ComprobacionDePrimos"
+            android:exported="false"/>
+
+
+
+
+
 
 
         <activity android:name=".MenuOperaciones"
@@ -30,5 +38,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>

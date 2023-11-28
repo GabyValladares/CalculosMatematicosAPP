@@ -36,6 +36,7 @@ public class MenuOperaciones extends AppCompatActivity {
             button.setLayoutParams(params);
             gridLayout.addView(button);
         }
+
         btnTrinomio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,5 +44,21 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        Button buttonDivision = findViewById(R.id.btn_said);
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+
+                startActivity(intent);
+            }
+        });
+
+
     }
+
 }
