@@ -17,6 +17,7 @@
 
 
         <activity
+
             android:name=".MainActivity"
             android:exported="false"/>
 
@@ -31,7 +32,11 @@
 
         <activity
             android:name=".MultiplicacionMonomios"
+            android:exported="true"/>
+        <activity
+            android:name=".Area_Perimetro_Pentagono"
             android:exported="false" />
+
         <activity
             android:name=".TinomioCuadradoPerfecto"
             android:exported="true"/>
