@@ -58,7 +58,7 @@
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintStart_toEndOf="@+id/btnTrinomio"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -110,17 +110,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
-        android:id="@+id/button11"
-        android:layout_width="187dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="4dp"
+        android:id="@+id/btnPitagoras"
+        android:layout_width="185dp"
+        android:layout_height="75dp"
         android:layout_marginTop="552dp"
+        android:layout_marginEnd="200dp"
         android:onClick="pitagoras"
         android:text="TEOREMA DE PITAGORAS"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -148,15 +147,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btn_said"
         android:layout_width="0dp"
         android:layout_height="79dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="552dp"
-        android:text="Button"
+        android:text="Numero Primos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/btnPitagoras"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -172,12 +171,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnTrinomio"
         android:layout_width="0dp"
         android:layout_height="94dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="144dp"
-        android:text="Button"
+        android:text="Trinomio-Monomio"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
