@@ -29,6 +29,10 @@
 
 
 
+
+        <activity
+            android:name=".FormulaGeneral"
+            android:exported="true" />
         <activity android:name=".MenuOperaciones"
             android:exported="true">
             <intent-filter>

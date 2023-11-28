@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuOperaciones extends AppCompatActivity {
 
+    Button btformulag;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,16 @@ public class MenuOperaciones extends AppCompatActivity {
         TextView titleTextView = findViewById(R.id.titleTextView);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btnTrinomio=findViewById(R.id.btnTrinomio);
+
+        btformulag = findViewById(R.id.btnformulageneral);
+
+        btformulag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOperaciones.this, FormulaGeneral.class);
+                startActivity(intent);
+            }
+        });
 
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
