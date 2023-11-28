@@ -140,7 +140,7 @@
         android:layout_height="78dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
-        android:text="Button"
+        android:text="Numeros Primos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button9"
