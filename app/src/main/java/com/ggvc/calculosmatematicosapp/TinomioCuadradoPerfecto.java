@@ -1,6 +1,8 @@
 package com.ggvc.calculosmatematicosapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +21,7 @@ public class TinomioCuadradoPerfecto extends AppCompatActivity {
         EditText editTextDos = findViewById(R.id.txtnumerodos);
         EditText editTextTres = findViewById(R.id.txtnumerotres);
         Button buttonCalcular = findViewById(R.id.bttcalcular);
+        Button buttonRegresar = findViewById(R.id.bttregresarOper);
         TextView textViewRespuesta = findViewById(R.id.lblrespuesta);
 
 
@@ -46,6 +49,13 @@ public class TinomioCuadradoPerfecto extends AppCompatActivity {
 
                     textViewRespuesta.setText("*Llene todos los campos");
                 }
+            }
+        });
+        buttonRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(TinomioCuadradoPerfecto.this,MenuOperaciones.class);
+                startActivity(intent);
             }
         });
     }

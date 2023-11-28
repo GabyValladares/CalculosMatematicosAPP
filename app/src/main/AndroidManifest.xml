@@ -14,30 +14,54 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".NumerosPrimos"
+            android:name=".TrapecioActivity"
             android:exported="false" />
+
+
         <activity
-            android:name=".ComprobacionDePrimos"
-            android:exported="false"/>
+
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".NumerosPrimos"
+            android:exported="true"/>
+
         <activity
             android:name=".FormulaGeneral"
             android:exported="false" />
-        <activity
-            android:name=".MainActivitySumar"
-            android:exported="false" />
+
         <activity
             android:name=".MultiplicacionMonomios"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".TinomioCuadradoPerfecto"
             android:exported="true"/>
+
+
+        <activity
+            android:name=".ComprobacionDePrimos"
+            android:exported="true"/>
+
+        <activity
+            android:name=".FibonacciActivity"
+            android:exported="true" />
+
+
         <activity android:name=".MenuOperaciones"
             android:exported="true">
+
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+
+
     </application>
 </manifest>
