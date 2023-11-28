@@ -4,8 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bimo"
     tools:context=".MenuOperaciones">
+
+    <ImageView
+        android:id="@+id/gifBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lineas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -98,16 +110,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
-        android:id="@+id/button11"
-        android:layout_width="0dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="4dp"
+        android:id="@+id/btnPitagoras"
+        android:layout_width="185dp"
+        android:layout_height="75dp"
         android:layout_marginTop="552dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/btn_said"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="200dp"
+        android:onClick="pitagoras"
+        android:text="TEOREMA DE PITAGORAS"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -123,12 +135,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btnNPrimos"
         android:layout_width="0dp"
         android:layout_height="78dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
-        android:text="Button"
+        android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button9"
@@ -143,7 +155,7 @@
         android:text="Numero Primos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/btnPitagoras"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -153,7 +165,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/btnNPrimos"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
