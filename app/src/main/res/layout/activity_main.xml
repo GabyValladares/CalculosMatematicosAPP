@@ -130,6 +130,7 @@
         android:id="@+id/btnRegresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="regresar"
         android:text="REGRESAR"
         app:backgroundTint="#972828"
         app:layout_constraintStart_toStartOf="parent"

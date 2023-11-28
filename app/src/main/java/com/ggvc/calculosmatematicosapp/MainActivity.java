@@ -2,6 +2,7 @@ package com.ggvc.calculosmatematicosapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -78,6 +79,14 @@ public class MainActivity extends AppCompatActivity {
 
     public static boolean verificarTeoremaPitagoras(double ladoA, double ladoB, double hipotenusa) {
         return Math.pow(ladoA, 2) + Math.pow(ladoB, 2) == Math.pow(hipotenusa, 2);
+    }
+
+
+    public  void  regresar(View v){
+
+        Intent in = new Intent(MainActivity.this, MenuOperaciones.class);
+        startActivity(in);
+
     }
 
 
