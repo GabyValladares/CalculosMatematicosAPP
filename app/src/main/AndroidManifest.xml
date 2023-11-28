@@ -15,6 +15,7 @@
 
 
 
+
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
@@ -53,6 +54,13 @@
             </intent-filter>
 
         </activity>
+
+
+
+        <activity
+            android:name=".FibonacciActivity"
+            android:exported="false" />
+
 
 
     </application>

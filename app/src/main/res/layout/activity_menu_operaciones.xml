@@ -62,12 +62,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btn_fibonacci"
         android:layout_width="0dp"
         android:layout_height="71dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="628dp"
-        android:text="Button"
+        android:layout_marginTop="668dp"
+        android:onClick="fibonacci"
+        android:text="FIBONACCI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_weight="1"
@@ -110,17 +111,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <Button
         android:id="@+id/btnPitagoras"
         android:layout_width="185dp"
         android:layout_height="75dp"
-        android:layout_marginTop="552dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="172dp"
         android:onClick="pitagoras"
         android:text="TEOREMA DE PITAGORAS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button7"
@@ -149,13 +149,14 @@
     <Button
         android:id="@+id/btn_said"
         android:layout_width="0dp"
-        android:layout_height="79dp"
+        android:layout_height="78dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="552dp"
-        android:text="Numero Primos"
+        android:layout_marginTop="576dp"
+        android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/btnPitagoras"
+        app:layout_constraintStart_toEndOf="@+id/button9"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button

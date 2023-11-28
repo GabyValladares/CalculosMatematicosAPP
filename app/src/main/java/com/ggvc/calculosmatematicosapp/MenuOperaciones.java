@@ -94,6 +94,14 @@ public class MenuOperaciones extends AppCompatActivity {
 
         }
 
+    public  void fibonacci(View v){
+
+        Intent in = new Intent(MenuOperaciones.this, FibonacciActivity.class);
+        startActivity(in);
+
+
+    }
+
     }
 
 
