@@ -2,6 +2,7 @@ package com.ggvc.calculosmatematicosapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,5 +48,10 @@ public class FibonacciActivity extends AppCompatActivity {
             text = text + i + ". " + fib.get(i) + "\n";
         }
         return  text;
+    }
+
+    public  void  regresarfib(View v){
+        Intent in=new Intent(FibonacciActivity.this,MenuOperaciones.class);
+        startActivity(in);
     }
 }

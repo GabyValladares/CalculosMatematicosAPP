@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ggvc.calculosmatematicosapp">
 
     <application
         android:allowBackup="true"
@@ -15,16 +16,15 @@
 
         <activity
             android:name=".TrapecioActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
 
-
-        <activity
-
-            android:name=".MainActivity"
-            android:exported="true"/>
         <activity
             android:name=".NumerosPrimos"
-            android:exported="true"/>
+            android:exported="true" />
 
         <activity
             android:name=".FormulaGeneral"
@@ -35,33 +35,31 @@
             android:exported="true" />
 
         <activity
-            android:name=".TinomioCuadradoPerfecto"
-            android:exported="true"/>
+            android:name=".Area_Perimetro_Pentagono"
+            android:exported="false" />
 
+        <activity
+            android:name=".TinomioCuadradoPerfecto"
+            android:exported="true" />
 
         <activity
             android:name=".ComprobacionDePrimos"
-            android:exported="true"/>
+            android:exported="true" />
 
         <activity
             android:name=".FibonacciActivity"
             android:exported="true" />
 
-
-        <activity android:name=".MenuOperaciones"
+        <activity
+            android:name=".MenuOperaciones"
             android:exported="true">
-
-
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
-
-
 
     </application>
 </manifest>
