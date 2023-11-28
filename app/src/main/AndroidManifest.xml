@@ -13,43 +13,37 @@
         android:theme="@style/Theme.CalculosMatematicosAPP"
         tools:targetApi="31">
 
-
-
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
-
-
         <activity
             android:name=".NumerosPrimos"
             android:exported="false" />
 
-
-
-
-
         <activity
             android:name=".MultiplicacionMonomios"
             android:exported="false" />
+
         <activity
             android:name=".TinomioCuadradoPerfecto"
             android:exported="true"/>
+
         <activity
             android:name=".ComprobacionDePrimos"
             android:exported="false"/>
 
-
-
-
-
-
-
-
         <activity
             android:name=".FormulaGeneral"
             android:exported="true" />
+
+        <activity
+            android:name=".FibonacciActivity"
+            android:exported="false" />
+
+
         <activity android:name=".MenuOperaciones"
             android:exported="true">
+
 
 
             <intent-filter>
@@ -59,6 +53,7 @@
             </intent-filter>
 
         </activity>
+
 
 
     </application>
