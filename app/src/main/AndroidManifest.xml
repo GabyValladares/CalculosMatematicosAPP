@@ -15,12 +15,17 @@
 
         <activity
 
+
             android:name=".MainActivity"
             android:exported="true"/>
         <activity
             android:name=".NumerosPrimos"
             android:exported="true"/>
 
+        <activity
+            android:name=".FormulaGeneral"
+            android:exported="false" />
+       
         <activity
             android:name=".MultiplicacionMonomios"
             android:exported="true" />
@@ -29,13 +34,10 @@
             android:name=".TinomioCuadradoPerfecto"
             android:exported="true"/>
 
+
         <activity
             android:name=".ComprobacionDePrimos"
             android:exported="true"/>
-
-        <activity
-            android:name=".FormulaGeneral"
-            android:exported="true" />
 
         <activity
             android:name=".FibonacciActivity"
@@ -58,6 +60,4 @@
 
 
     </application>
-
-
 </manifest>

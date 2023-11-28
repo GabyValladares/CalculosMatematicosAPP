@@ -13,8 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuOperaciones extends AppCompatActivity {
 
+
     Button btformulag;
     private Object v;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,10 @@ public class MenuOperaciones extends AppCompatActivity {
 
         btformulag = findViewById(R.id.btnformulageneral);
 
+        Button buttonDivision = findViewById(R.id.btn_said);
+        Button btformulag = findViewById(R.id.btnformulageneral);
+
+
         btformulag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +48,7 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
 
         Button button3 = findViewById(R.id.btnPentagono);
@@ -67,16 +74,42 @@ public class MenuOperaciones extends AppCompatActivity {
         // }
         //});
 
+        // Configurar el OnClickListener para el Button2
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad MainActivitySumar
+                Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        // Configurar el título
+        titleTextView.setText("Título de la Actividad");
+
+        // Cargar el GIF en el ImageView usando Glide
+        //Glide.with(this)
+                //.asGif()
+                //.load(R.drawable.lineas)
+                //.into(gifBackground);
         btnPrimos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
                 startActivity(intent);
             }
 
         });
 
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+                startActivity(intent);
+            }
+        });
 
         btnTrinomio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,7 +118,7 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button buttonDivision = findViewById(R.id.btn_said);
+
 
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
