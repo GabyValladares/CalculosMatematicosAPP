@@ -114,13 +114,7 @@ public class MenuOperaciones extends AppCompatActivity {
 
         // Configurar el OnClickListener para buttonDivision
 
-        buttonDivision.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
-                startActivity(intent);
-            }
-        });
+
 
         btnPrimos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,10 +151,6 @@ public class MenuOperaciones extends AppCompatActivity {
     }
 
     // Métodos adicionales según tu código original
-    public void pitagoras(View v) {
-        Intent in = new Intent(MenuOperaciones.this, MainActivity.class);
-        startActivity(in);
-    }
 
     public void fibonacci(View v) {
         Intent in = new Intent(MenuOperaciones.this, FibonacciActivity.class);

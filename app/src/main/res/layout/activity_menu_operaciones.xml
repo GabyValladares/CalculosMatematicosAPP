@@ -59,20 +59,12 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btnTrinomio"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
 
-    <Button
-        android:id="@+id/btn_fibonacci"
-        android:layout_width="331dp"
-        android:layout_height="71dp"
-<<<<<<< HEAD
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="16dp"
-=======
+    =======
         android:layout_marginStart="4dp"
-<<<<<<< HEAD
-        android:layout_marginTop="632dp"
-=======
+
+    =======
         android:layout_marginTop="612dp"
 >>>>>>> 2d30b3fefb3ae70a924baae6612fbdf829460029
 >>>>>>> 75453633117b798a4b407c56c918e2aaadd85ce2
@@ -81,6 +73,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
+
+    ]]>
+
+    <Button
+        android:id="@+id/btn_fibonacci"
+        android:layout_width="331dp"
+        android:layout_height="71dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/btnformulageneral"
@@ -96,12 +97,8 @@
 
     <Button
         android:id="@+id/btnIrTrapecio"
-<<<<<<< HEAD
-        android:layout_width="199dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="412dp"
-=======
+
+    =======
         android:layout_width="190dp"
         android:layout_height="81dp"
         android:layout_marginStart="4dp"
@@ -128,13 +125,8 @@
 
     <Button
         android:id="@+id/btnPitagoras"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:layout_width="200dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
-=======
+
+    =======
         android:layout_width="196dp"
         android:layout_height="77dp"
         android:layout_marginStart="12dp"
@@ -152,16 +144,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button7"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:layout_width="202dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="412dp"
-        android:text="OPERACIONES TRIANGULOS"
-=======
+    =======
 
         android:layout_width="179dp"
         android:layout_height="56dp"
@@ -182,47 +165,6 @@
     <Button
         android:id="@+id/btnNPrimos"
         android:layout_width="202dp"
-<<<<<<< HEAD
-        android:layout_height="67dp"
-=======
-        android:layout_height="63dp"
->>>>>>> 75453633117b798a4b407c56c918e2aaadd85ce2
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
-        android:layout_marginEnd="12dp"
-        android:text="Numeros Primos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_said"
-<<<<<<< HEAD
-        android:layout_width="191dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="224dp"
-=======
-        android:layout_width="169dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="560dp"
-        android:layout_marginEnd="16dp"
->>>>>>> 75453633117b798a4b407c56c918e2aaadd85ce2
-        android:text="NUMEROS PRIMOS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnPentagono"
-        android:layout_width="210dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="560dp"
-        android:text="PENTAGONO"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnTrinomio"
@@ -257,8 +199,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     <Button
         android:id="@+id/btn_said"
         android:layout_width="200dp"
@@ -267,16 +207,12 @@
         android:layout_marginBottom="116dp"
         android:text="COMPROBACION PRIMOS"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" /><![CDATA[
 =======
 =======
-    <Button
-        android:id="@+id/btn_said"
+    >>>>>> 75453633117b798a4b407c56c918e2aaadd85ce2
 
-        android:layout_width="208dp"
-
-        android:layout_height="67dp"
->>>>>>> 75453633117b798a4b407c56c918e2aaadd85ce2
+    ]]>
 
     <Button
         android:id="@+id/btnPentagono"
@@ -286,7 +222,7 @@
         android:layout_marginBottom="112dp"
         android:text="PENTAGONO"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" /><![CDATA[
     =======
 
 >>>>>>> a9bc57e31c2d3f666f99b5978a81e3973a1d4a4f
@@ -301,15 +237,28 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btnPentagono"
-        android:layout_width="196dp"
-        android:layout_height="74dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="116dp"
-        android:text="PENTAGONO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    >>>>>>> 2d30b3fefb3ae70a924baae6612fbdf829460029
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout><![CDATA[=======
+        android:layout_height="63dp"
+>>>>>>> 75453633117b798a4b407c56c918e2aaadd85ce2
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="476dp"
+        android:layout_marginEnd="12dp"
+        android:text="Numeros Primos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent" />
 
->>>>>>> 2d30b3fefb3ae70a924baae6612fbdf829460029
-</androidx.constraintlayout.widget.ConstraintLayout>
+    =======
+        android:layout_width="169dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="16dp"
+>>>>>>> 75453633117b798a4b407c56c918e2aaadd85ce2
+        android:text="NUMEROS PRIMOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    ]]>
