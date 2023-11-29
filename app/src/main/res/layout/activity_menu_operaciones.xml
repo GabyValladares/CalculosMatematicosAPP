@@ -112,16 +112,16 @@
 
     <Button
         android:id="@+id/btnPitagoras"
-        android:layout_width="210dp"
-        android:layout_height="84dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="96dp"
+        android:layout_width="196dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="100dp"
         android:onClick="pitagoras"
         android:text="TEOREMA DE PITAGORAS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+        <Button
         android:id="@+id/button7"
         android:layout_width="0dp"
         android:layout_height="73dp"
