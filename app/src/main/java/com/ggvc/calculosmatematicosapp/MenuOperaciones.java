@@ -21,7 +21,10 @@ public class MenuOperaciones extends AppCompatActivity {
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
-        Button button2 = findViewById(R.id.button2);
+
+
+        Button trapecio = findViewById(R.id.btnIrTrapecio);
+
         Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
@@ -30,12 +33,14 @@ public class MenuOperaciones extends AppCompatActivity {
         Button button3 = findViewById(R.id.btnPentagono);
         Button btformulag = findViewById(R.id.btnformulageneral);
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
+        Button button2 = findViewById(R.id.button2);
+
 
 
         btnJefersonY = findViewById(R.id.btnJefersonY);
 
         // Configurar el título
-        titleTextView.setText("Título de la Actividad");
+        titleTextView.setText("ELIJA SU OPERACION");
 
         // Cargar el GIF en el ImageView usando Glide
         Glide.with(this)
@@ -43,23 +48,26 @@ public class MenuOperaciones extends AppCompatActivity {
                 .load(R.drawable.lineas)
                 .into(gifBackground);
 
-        // Configurar el OnClickListener para el Button2
-        //button2.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-           // public void onClick(View v) {
-             //   Intent intent = new Intent(MenuOperaciones.this, MainActivitySumar.class);
-               // startActivity(intent);
-           // }
-        //});
-
         // Configurar el OnClickListener para el Button3 (Pentágono)
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
                 startActivity(intent);
+           }
+        });
+
+        // Configurar el OnClickListener para el Button2
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad MainActivitySumar
+                Intent intent = new Intent(MenuOperaciones.this, MainNumerosPerfectos.class);
+                startActivity(intent);
             }
         });
+
 
         // Configurar el OnClickListener para btformulag
         btformulag.setOnClickListener(new View.OnClickListener() {
@@ -116,6 +124,15 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        trapecio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inte=new Intent(MenuOperaciones.this, TrapecioActivity.class);
+                startActivity(inte);
+            }
+        });
+
     }
 
     // Métodos adicionales según tu código original
