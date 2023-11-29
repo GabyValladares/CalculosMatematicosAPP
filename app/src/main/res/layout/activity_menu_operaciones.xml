@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -44,9 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/titleTextView"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView">
-
         <!-- Botones se agregarán dinámicamente en el código Java/Kotlin -->
-
     </GridLayout>
 
     <Button
@@ -110,14 +109,17 @@
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnPitagoras"
         android:layout_width="203dp"
         android:layout_height="73dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="476dp"
         android:text="PITAGORAS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button7"
@@ -136,23 +138,14 @@
         android:layout_width="199dp"
         android:layout_height="74dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
+        android:layout_marginTop="548dp"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btnPentagono"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnPentagono"
-        android:layout_width="205dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="184dp"
-        android:text="PENTAGONO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
 
     <Button
         android:id="@+id/btnTrinomio"
@@ -199,5 +192,15 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPentagono"
+        android:layout_width="197dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="184dp"
+        android:text="PENTAGONO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
