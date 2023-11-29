@@ -33,6 +33,8 @@ public class MenuOperaciones extends AppCompatActivity {
         Button button3 = findViewById(R.id.btnPentagono);
         Button btformulag = findViewById(R.id.btnformulageneral);
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
+        Button button2 = findViewById(R.id.button2);
+
 
 
         // Configurar el título
@@ -54,13 +56,16 @@ public class MenuOperaciones extends AppCompatActivity {
         //});
 
         // Configurar el OnClickListener para el Button3 (Pentágono)
-        button3.setOnClickListener(new View.OnClickListener() {
+
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
+                // Abrir la actividad MainActivitySumar
+                Intent intent = new Intent(MenuOperaciones.this, MainNumerosPerfectos.class);
                 startActivity(intent);
             }
         });
+
 
         // Configurar el OnClickListener para btformulag
         btformulag.setOnClickListener(new View.OnClickListener() {
