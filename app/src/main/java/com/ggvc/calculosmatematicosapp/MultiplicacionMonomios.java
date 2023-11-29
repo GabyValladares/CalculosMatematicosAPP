@@ -21,6 +21,7 @@ public class MultiplicacionMonomios extends AppCompatActivity {
         EditText editTextDos = findViewById(R.id.txtnumerotwo);
         Button buttonCalcular = findViewById(R.id.bttcalcularmono);
         Button bottonRegresar = findViewById(R.id.bttregresar);
+        Button bottonTrinomio = findViewById(R.id.btttrinomio);
         TextView textViewRespuesta = findViewById(R.id.lblres);
 
 
@@ -53,6 +54,13 @@ public class MultiplicacionMonomios extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MultiplicacionMonomios.this, MenuOperaciones.class);
 
+                startActivity(intent);
+            }
+        });
+        bottonTrinomio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MultiplicacionMonomios.this,TinomioCuadradoPerfecto.class);
                 startActivity(intent);
             }
         });
