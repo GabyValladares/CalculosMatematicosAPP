@@ -49,12 +49,12 @@
     </GridLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnNumerosPerfectos"
         android:layout_width="0dp"
         android:layout_height="94dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="144dp"
-        android:text="Button"
+        android:text="NUMEROS PERFECTOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btnTrinomio"
@@ -155,9 +155,6 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="144dp"
         android:text="Trinomio-Monomio"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
