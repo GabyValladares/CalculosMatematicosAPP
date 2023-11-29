@@ -21,7 +21,6 @@ public class MenuOperaciones extends AppCompatActivity {
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
-        Button button2 = findViewById(R.id.button2);
         Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
