@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
-import com.ggvc.calculosmatematicosapp.R;
 
 public class MenuOperaciones extends AppCompatActivity {
 
@@ -20,24 +19,32 @@ public class MenuOperaciones extends AppCompatActivity {
 
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
+
+        GridLayout gridLayout = findViewById(R.id.gridLayout);
+        Button btOperacionesBasicas = findViewById(R.id.btnOperacionesBasicas);
+
         ImageView gifBackground = findViewById(R.id.gifBackground);
-
-
-        Button trapecio = findViewById(R.id.btnIrTrapecio);
-
         Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
-        GridLayout gridLayout = findViewById(R.id.gridLayout);
+
+        GridLayout gridLayoutPentagono = findViewById(R.id.gridLayout);
         Button btnTrinomio = findViewById(R.id.btnTrinomio);
         Button buttonDivision = findViewById(R.id.btn_said);
         Button button3 = findViewById(R.id.btnPentagono);
         Button btformulag = findViewById(R.id.btnformulageneral);
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
+
+        Button trapecio = findViewById(R.id.btnIrTrapecio);
+
         Button button2 = findViewById(R.id.button2);
 
 
 
+
         // TITULO
+
+        // Configurar el título
+
         titleTextView.setText("ELIJA SU OPERACION");
 
         // Cargar el GIF en el ImageView usando Glide
@@ -52,11 +59,10 @@ public class MenuOperaciones extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
                 startActivity(intent);
-           }
+            }
         });
 
         // Configurar el OnClickListener para el Button2
-
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +72,13 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
+        btOperacionesBasicas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuOperaciones.this, BasicasActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Configurar el OnClickListener para btformulag
         btformulag.setOnClickListener(new View.OnClickListener() {
@@ -86,19 +99,18 @@ public class MenuOperaciones extends AppCompatActivity {
         });
 
         // Configurar el OnClickListener para btnPrimos
-        btnPrimos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
-                startActivity(intent);
-            }
-        });
-
-        // Configurar el OnClickListener para buttonDivision
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPrimos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
                 startActivity(intent);
             }
         });
@@ -115,7 +127,6 @@ public class MenuOperaciones extends AppCompatActivity {
         btnJefersonY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Abrir la actividad Factorial
                 Intent intent = new Intent(MenuOperaciones.this, Factorial.class);
                 startActivity(intent);
             }
@@ -124,11 +135,10 @@ public class MenuOperaciones extends AppCompatActivity {
         trapecio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inte=new Intent(MenuOperaciones.this, TrapecioActivity.class);
+                Intent inte = new Intent(MenuOperaciones.this, TrapecioActivity.class);
                 startActivity(inte);
             }
         });
-
     }
 
     // Métodos adicionales según tu código original
