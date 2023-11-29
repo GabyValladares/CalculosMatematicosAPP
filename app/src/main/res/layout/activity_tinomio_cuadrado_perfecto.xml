@@ -50,13 +50,10 @@
         android:id="@+id/bttcalcular"
         android:layout_width="175dp"
         android:layout_height="75dp"
-<<<<<<< HEAD
-        android:layout_marginStart="136dp"
-        android:layout_marginBottom="28dp"
-=======
+
         android:layout_marginStart="228dp"
         android:layout_marginBottom="32dp"
->>>>>>> bb44aae87c636326a016ecd392ea9688ca9a3a77
+
         android:fontFamily="sans-serif-smallcaps"
         android:text="Calcular"
         android:textAllCaps="true"
@@ -65,8 +62,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-<<<<<<< HEAD
-=======
+
     <Button
         android:id="@+id/bttregresarOper"
         android:layout_width="132dp"
@@ -81,7 +77,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
->>>>>>> bb44aae87c636326a016ecd392ea9688ca9a3a77
+
     <TextView
         android:id="@+id/txttitulo"
         android:layout_width="252dp"

@@ -78,8 +78,7 @@
         android:textColor="#27272B"
         android:textSize="20sp"
         android:textStyle="bold" />
-<<<<<<< HEAD
-=======
+
 
     <Button
         android:id="@+id/btn_regresar"
@@ -90,5 +89,5 @@
         android:layout_marginEnd="279dp"
         android:layout_marginBottom="17dp"
         android:text="Regresar" />
->>>>>>> bb44aae87c636326a016ecd392ea9688ca9a3a77
+
 </RelativeLayout>

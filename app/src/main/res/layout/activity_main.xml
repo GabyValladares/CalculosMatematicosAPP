@@ -55,7 +55,8 @@
         android:textColor="#171616"
         app:layout_constraintEnd_toStartOf="@+id/txtladoA"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/lblLadoB2"
@@ -69,7 +70,8 @@
         android:textColor="#121111"
         app:layout_constraintEnd_toStartOf="@+id/txtladoB"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/lblLadoC2"
@@ -83,7 +85,8 @@
         android:textColor="#131313"
         app:layout_constraintEnd_toStartOf="@+id/txtladoC"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout" />
 
     <EditText
         android:id="@+id/txtladoA2"
