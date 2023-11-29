@@ -15,6 +15,9 @@
         tools:targetApi="31">
 
         <activity
+            android:name=".MainNumerosPerfectos"
+            android:exported="false"/>
+        <activity
             android:name=".TrapecioActivity"
             android:exported="false"/>
         <activity
@@ -26,27 +29,12 @@
         <activity
             android:name=".FormulaGeneral"
             android:exported="false" />
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 6573a408be43ef14cbdc4fd70e27ed7229aa483c
         <activity
-            android:name=".MainNumerosPerfectos"
-            android:exported="false" />
-        <activity
-
             android:name=".TrianguloActivity"
             android:exported="false" />
 
-<<<<<<< HEAD
-        </activity>
-=======
-
-
->>>>>>> 6573a408be43ef14cbdc4fd70e27ed7229aa483c
         <activity
-
             android:name=".MultiplicacionMonomios"
             android:exported="false" />
         <activity
@@ -64,51 +52,15 @@
         <activity
             android:name=".Factorial"
             android:exported="false"/>
-
         <activity
             android:name=".MenuOperaciones"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         </activity>
-
-
     </application>
 </manifest>
-=======
-        </activity>
-
-
-
-        <activity
-            android:name=".Factorial"
-            android:exported="false">
-
-=======
->>>>>>> 6573a408be43ef14cbdc4fd70e27ed7229aa483c
-        </activity>
-
-
-    </application>
-
-<<<<<<< HEAD
-</manifest>
->>>>>>> 46c06ca13bd99ec1ed1086e8b1628abe70eb3247
-=======
-
-
-
-
-
-
-
-
-
-
-</manifest>
->>>>>>> 6573a408be43ef14cbdc4fd70e27ed7229aa483c
