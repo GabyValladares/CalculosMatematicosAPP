@@ -31,7 +31,7 @@ public class MenuOperaciones extends AppCompatActivity {
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
 
 
-        // Configurar el título
+        // TITULO
         titleTextView.setText("ELIJA SU OPERACION");
 
         // Cargar el GIF en el ImageView usando Glide
