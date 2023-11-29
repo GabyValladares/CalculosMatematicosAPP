@@ -22,7 +22,7 @@ public class MenuOperaciones extends AppCompatActivity {
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
-        Button button2 = findViewById(R.id.button2);
+        Button button2 = findViewById(R.id.btnNumerosPerfectos);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btnTrinomio = findViewById(R.id.btnTrinomio);
