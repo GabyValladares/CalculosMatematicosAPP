@@ -33,7 +33,7 @@ public class MenuOperaciones extends AppCompatActivity {
 
 
         // Configurar el título
-        titleTextView.setText("Título de la Actividad");
+        titleTextView.setText("ELIJA SU OPERACION");
 
         // Cargar el GIF en el ImageView usando Glide
         Glide.with(this)
@@ -42,18 +42,19 @@ public class MenuOperaciones extends AppCompatActivity {
                 .into(gifBackground);
 
         // Configurar el OnClickListener para el Button2
-        //button2.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-           // public void onClick(View v) {
-             //   Intent intent = new Intent(MenuOperaciones.this, MainActivitySumar.class);
-               // startActivity(intent);
-           // }
-        //});
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOperaciones.this, MainNumerosPerfectos.class);
+                startActivity(intent);
+           }
+        });
 
         // Configurar el OnClickListener para el Button3 (Pentágono)
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
                 startActivity(intent);
             }
