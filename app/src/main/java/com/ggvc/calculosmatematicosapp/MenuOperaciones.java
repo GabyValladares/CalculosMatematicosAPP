@@ -13,8 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuOperaciones extends AppCompatActivity {
 
-
-    Button btformulag;
     private Object v;
 
 
@@ -33,9 +31,6 @@ public class MenuOperaciones extends AppCompatActivity {
 
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btnTrinomio = findViewById(R.id.btnTrinomio);
-
-
-        btformulag = findViewById(R.id.btnformulageneral);
 
         Button buttonDivision = findViewById(R.id.btn_said);
         Button btformulag = findViewById(R.id.btnformulageneral);
