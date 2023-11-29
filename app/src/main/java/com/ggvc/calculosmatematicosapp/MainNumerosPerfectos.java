@@ -16,7 +16,7 @@ public class MainNumerosPerfectos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
+        setContentView(R.layout.activity_numeros_perfectos);
 
         edNum1 = findViewById(R.id.edNum1);
         tvResultado = findViewById(R.id.tvResultado);
