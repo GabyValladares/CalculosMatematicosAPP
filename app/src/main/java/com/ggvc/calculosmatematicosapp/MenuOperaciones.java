@@ -42,16 +42,7 @@ public class MenuOperaciones extends AppCompatActivity {
                 .load(R.drawable.lineas)
                 .into(gifBackground);
 
-        // Configurar el OnClickListener para el Button2
-        //button2.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-           // public void onClick(View v) {
-             //   Intent intent = new Intent(MenuOperaciones.this, MainActivitySumar.class);
-               // startActivity(intent);
-           // }
-        //});
 
-        // Configurar el OnClickListener para el Button3 (Pentágono)
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
