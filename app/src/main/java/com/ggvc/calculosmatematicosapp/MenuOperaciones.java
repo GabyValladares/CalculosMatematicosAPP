@@ -31,6 +31,9 @@ public class MenuOperaciones extends AppCompatActivity {
 
         btformulag = findViewById(R.id.btnformulageneral);
 
+        Button btnJefersonY = findViewById(R.id.btnJefersonY);
+
+
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
 
@@ -88,6 +91,15 @@ public class MenuOperaciones extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuOperaciones.this, MultiplicacionMonomios.class);
+                startActivity(intent);
+            }
+        });
+
+        btnJefersonY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad Factorial
+                Intent intent = new Intent(MenuOperaciones.this, Factorial.class);
                 startActivity(intent);
             }
         });

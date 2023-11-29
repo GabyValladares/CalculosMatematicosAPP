@@ -61,5 +61,17 @@
 
         </activity>
 
+
+
+
+
+        <activity
+            android:name=".Factorial"
+            android:exported="false">
+
+        </activity>
+
+
     </application>
+
 </manifest>
