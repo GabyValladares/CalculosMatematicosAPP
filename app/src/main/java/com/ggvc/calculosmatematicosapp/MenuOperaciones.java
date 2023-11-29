@@ -29,6 +29,8 @@ public class MenuOperaciones extends AppCompatActivity {
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button2 = findViewById(R.id.button2);
 
+
+        Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
 
         GridLayout gridLayout = findViewById(R.id.gridLayout);
@@ -95,21 +97,29 @@ public class MenuOperaciones extends AppCompatActivity {
                 //.load(R.drawable.lineas)
                 //.into(gifBackground);
         btnPrimos.setOnClickListener(new View.OnClickListener() {
+
+        // Configurar el OnClickListener para el Button2
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
+                // Abrir la actividad MainActivitySumar
+                Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
                 startActivity(intent);
             }
-
         });
 
-        buttonDivision.setOnClickListener(new View.OnClickListener() {
+        button7.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOperaciones.this, TrianguloActivity.class);
                 startActivity(intent);
             }
+
         });
+                GridLayout gridLayout = findViewById(R.id.gridLayout);
+
+                // Configurar el título
+                titleTextView.setText("Título de la Actividad");
 
         btnTrinomio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,5 +157,39 @@ public class MenuOperaciones extends AppCompatActivity {
 
 
         }
+
+                // Cargar el GIF en el ImageView usando Glide
+                //Glide.with(this)
+                        //.asGif()
+                       // .load(R.drawable.lineas)
+                       // .into(gifBackground);
+                btnPrimos.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
+                        startActivity(intent);
+                    }
+                });
+
+                buttonDivision.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+                        startActivity(intent);
+                    }
+                });
+
+
+
+
+        btnTrinomio.setOnClickListener(new View.OnClickListener(){
+
+        @Override
+        public void onClick (View view){
+        Intent intent = new Intent(MenuOperaciones.this, MultiplicacionMonomios.class);
+        startActivity(intent);
+    }
+    }
+
 
 
