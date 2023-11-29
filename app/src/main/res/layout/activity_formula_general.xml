@@ -159,7 +159,7 @@
         tools:text="numero b" />
 
     <Button
-        android:id="@+id/btnNumerosPerfectos"
+        android:id="@+id/button2"
         android:layout_width="215dp"
         android:layout_height="116dp"
         android:layout_marginStart="112dp"
