@@ -9,8 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 public class MenuOperaciones extends AppCompatActivity {
 
     private Object v;
@@ -46,7 +44,7 @@ public class MenuOperaciones extends AppCompatActivity {
 
 
         Button button3 = findViewById(R.id.btnPentagono);
-
+        Button buttonp = findViewById(R.id.btnPentagono);
 
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
@@ -87,6 +85,9 @@ public class MenuOperaciones extends AppCompatActivity {
         //.asGif()
         //.load(R.drawable.lineas)
         //.into(gifBackground);
+
+        // Configurar el OnClickListener para el Button2
+
         btnPrimos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,14 +95,6 @@ public class MenuOperaciones extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });
-
-        buttonDivision.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
-                startActivity(intent);
-            }
         });
 
         btnTrinomio.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +105,6 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
-
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -122,7 +114,8 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
+
+        buttonp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Abrir la actividad Area_Perimetro_Pentagono
@@ -136,6 +129,11 @@ public class MenuOperaciones extends AppCompatActivity {
         Intent in = new Intent(MenuOperaciones.this, MainActivity.class);
         startActivity(in);
     }
-}
 
+
+    public void fibonacci(View v) {
+        Intent in = new Intent(MenuOperaciones.this, FibonacciActivity.class);
+        startActivity(in);
+    }
+}
 

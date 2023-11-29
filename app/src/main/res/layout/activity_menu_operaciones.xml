@@ -62,12 +62,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btn_fibonacci"
         android:layout_width="0dp"
         android:layout_height="71dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="628dp"
-        android:text="Button"
+        android:layout_marginTop="644dp"
+        android:onClick="fibonacci"
+        android:text="FIBONACCI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_weight="1"
@@ -109,23 +110,14 @@
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
     <Button
         android:id="@+id/btnPitagoras"
-        android:layout_width="185dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="552dp"
-
-        android:layout_marginEnd="200dp"
-        android:onClick="pitagoras"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintEnd_toStartOf="@+id/btnFibo"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnknownId" />
+        android:layout_width="203dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="104dp"
+        android:text="PITAGORAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button7"
@@ -141,45 +133,26 @@
 
     <Button
         android:id="@+id/btnNPrimos"
-        android:layout_width="0dp"
-        android:layout_height="78dp"
+        android:layout_width="199dp"
+        android:layout_height="74dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btnPentagono"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-
-        android:id="@+id/btn_said"
-
-        android:layout_width="0dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="552dp"
-
-        android:onClick="FibonacciI"
-        android:text="FIBONACCI"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/btnPitagoras"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/btnPentagono"
-        android:layout_width="0dp"
-        android:layout_height="78dp"
+        android:layout_width="205dp"
+        android:layout_height="72dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
-
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnknownId" />
+        android:layout_marginBottom="184dp"
+        android:text="PENTAGONO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnTrinomio"
@@ -216,5 +189,15 @@
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_said"
+        android:layout_width="201dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="104dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
