@@ -27,7 +27,7 @@
         android:layout_marginTop="44dp"
         android:text="ELIJA LA OPERACION QUE DESEA REALIZAR"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#FDFBFB"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         android:layout_width="0dp"
         android:layout_height="71dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="644dp"
+        android:layout_marginTop="612dp"
         android:onClick="fibonacci"
         android:text="FIBONACCI"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,8 +136,8 @@
 
     <Button
         android:id="@+id/btnNPrimos"
-        android:layout_width="196dp"
-        android:layout_height="60dp"
+        android:layout_width="202dp"
+        android:layout_height="63dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
         android:text="NUMEROS PRIMOS"
@@ -187,26 +187,27 @@
     <Button
         android:id="@+id/btn_said"
 
-        android:layout_width="209dp"
+        android:layout_width="208dp"
 
-        android:layout_height="75dp"
+        android:layout_height="67dp"
 
 
         android:layout_marginStart="4dp"
 
+        android:layout_marginTop="544dp"
+
+
         android:text="NUMEROS PRIMOS"
-
-
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="552dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnPentagono"
-        android:layout_width="170dp"
-        android:layout_height="84dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="92dp"
+        android:layout_width="196dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="116dp"
         android:text="PENTAGONO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
