@@ -27,14 +27,9 @@
             android:name=".FormulaGeneral"
             android:exported="false" />
         <activity
-
             android:name=".TrianguloActivity"
             android:exported="false" />
-
-
-
         <activity
-
             android:name=".MultiplicacionMonomios"
             android:exported="false" />
         <activity
