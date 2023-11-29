@@ -8,107 +8,259 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="16dp">
 
-    <EditText
-        android:id="@+id/txtBaseAlturaTrap"
-        android:layout_width="235dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="176dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/txtBaseMenorTrap"
-        android:layout_width="235dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="268dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <TextView
         android:id="@+id/lblTituloTrapecio"
-        android:layout_width="258dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginBottom="568dp"
+        android:layout_width="259dp"
+        android:layout_height="58dp"
         android:text="Area y perímetro de un trapecio "
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnPerimetroTrapecio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginBottom="64dp"
-        android:text="PERÍMETRO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
 
     <Button
         android:id="@+id/btnAreaTrapecio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="64dp"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:onClick="calcularArea"
         android:text="AREA"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
 
-    <TextView
-        android:id="@+id/lblBaseMayorTrap"
-        android:layout_width="120dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="364dp"
-        android:text="Base Mayor:"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <Button
+        android:id="@+id/btnPerimetroTrapecio"
+        android:layout_width="137dp"
+        android:layout_height="52dp"
+        android:onClick="calcularPerimetro"
+        android:text="PERÍMETRO"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/lblBaseMenorTrap"
-        android:layout_width="120dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="268dp"
-        android:text="Base Menor:"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/lblAlturaTrap"
-        android:layout_width="120dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="172dp"
-        android:text="Altura:"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
 
     <EditText
         android:id="@+id/txtBaseMayorTrap"
-        android:layout_width="235dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="364dp"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="256dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/txtBaseMayorTrap" />
+
+    <TextView
+        android:id="@+id/lblAlturaTrap"
+        android:layout_width="62dp"
+        android:layout_height="23dp"
+        android:text="Altura:"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <EditText
+        android:id="@+id/txtBaseMenorTrap"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="188dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/txtBaseMenorTrap" />
+
+    <EditText
+        android:id="@+id/txtBaseAlturaTrap"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="124dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/txtBaseAlturaTrap" />
+
+    <TextView
+        android:id="@+id/lblArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area ="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <TextView
+        android:id="@+id/lblResultPerim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <TextView
+        android:id="@+id/lblResultArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <TextView
+        android:id="@+id/lblPerimetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perimetro ="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <TextView
+        android:id="@+id/lblBaseMenorTrap"
+        android:layout_width="101dp"
+        android:layout_height="24dp"
+        android:text="Base Menor:"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <TextView
+        android:id="@+id/lblBaseMayorTrap"
+        android:layout_width="106dp"
+        android:layout_height="19dp"
+        android:text="Base Mayor:"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="249dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@drawable/trapimg" />
+
+    <EditText
+        android:id="@+id/txtC"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441"
+        tools:text="@string/txtC" />
+
+    <EditText
+        android:id="@+id/txtA"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:text="@string/txtA" />
+
+    <EditText
+        android:id="@+id/txtD"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289"
+        tools:text="@string/txtD" />
+
+    <EditText
+        android:id="@+id/txtB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289"
+        tools:text="@string/txtB" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volver"
+        android:text="Volver"
+        app:backgroundTint="#3DDB83"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
