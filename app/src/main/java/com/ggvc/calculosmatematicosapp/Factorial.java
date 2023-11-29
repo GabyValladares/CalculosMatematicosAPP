@@ -56,7 +56,8 @@ public class Factorial extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(Factorial.this, MenuOperaciones.class);
+                Intent intent = new Intent(
+                        Factorial.this, MenuOperaciones.class);
                 startActivity(intent);
             }
         });
