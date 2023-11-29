@@ -66,7 +66,7 @@
         android:layout_width="0dp"
         android:layout_height="71dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="644dp"
+        android:layout_marginTop="632dp"
         android:onClick="fibonacci"
         android:text="FIBONACCI"
         app:layout_constraintEnd_toEndOf="parent"
