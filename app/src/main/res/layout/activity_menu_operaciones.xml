@@ -24,14 +24,13 @@
         android:id="@+id/titleTextView"
         android:layout_width="259dp"
         android:layout_height="63dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="36dp"
         android:text="ELIJA LA OPERACION QUE DESEA REALIZAR"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,10 +52,10 @@
         android:layout_width="0dp"
         android:layout_height="94dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="124dp"
         android:text="NUMEROS PERFECTOS"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btnTrinomio"
         app:layout_constraintTop_toTopOf="parent" />
@@ -69,18 +68,20 @@
         android:layout_marginTop="672dp"
         android:onClick="fibonacci"
         android:text="FIBONACCI"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnformulageneral"
         android:layout_width="0dp"
         android:layout_height="85dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="232dp"
         android:text="FORMULA GENERAL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
@@ -126,7 +127,6 @@
 
     <Button
         android:id="@+id/button7"
-
         android:layout_width="179dp"
         android:layout_height="56dp"
         android:layout_marginStart="12dp"
@@ -140,7 +140,7 @@
         android:layout_width="198dp"
         android:layout_height="74dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
+        android:layout_marginTop="496dp"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.989"
@@ -176,7 +176,7 @@
         android:layout_width="0dp"
         android:layout_height="94dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="124dp"
         android:text="Trinomio-Monomio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -190,21 +190,19 @@
         android:text="Operacion Factorial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/btn_aldaz"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_aldaz"
         android:layout_width="0dp"
         android:layout_height="86dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="320dp"
-        android:text="Button"
+        android:text="Exponenciales"
         app:layout_constraintEnd_toStartOf="@+id/btnJefersonY"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
