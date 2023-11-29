@@ -26,7 +26,7 @@ public class MenuOperaciones extends AppCompatActivity {
         Button button2 = findViewById(R.id.button2);
 
         // Configurar el título
-        titleTextView.setText("Título de la Actividad");
+        titleTextView.setText("ELIJA SU OPERACION");
 
         // Cargar el GIF en el ImageView usando Glide
         Glide.with(this)
