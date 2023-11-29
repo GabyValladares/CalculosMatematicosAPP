@@ -53,6 +53,7 @@ public class MenuOperaciones extends AppCompatActivity {
                 .load(R.drawable.lineas)
                 .into(gifBackground);
 
+
         // Configurar el OnClickListener para el Button3 (Pentágono)
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
