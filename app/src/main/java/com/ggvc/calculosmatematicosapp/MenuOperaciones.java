@@ -23,7 +23,7 @@ public class MenuOperaciones extends AppCompatActivity {
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btOperacionesBasicas = findViewById(R.id.btnOperacionesBasicas);
 
-        ImageView gifBackground = findViewById(R.id.gifBackground);
+       // ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
 
@@ -39,13 +39,13 @@ public class MenuOperaciones extends AppCompatActivity {
         Button button2 = findViewById(R.id.button2);
 
         // Configurar el título
-        titleTextView.setText("ELIJA SU OPERACION");
+        titleTextView.setText("ELIJA LA OPERACION QUE DESEA REALIZAR");
 
         // Cargar el GIF en el ImageView usando Glide
-        Glide.with(this)
-                .asGif()
-                .load(R.drawable.lineas)
-                .into(gifBackground);
+       // Glide.with(this)
+            //    .asGif()
+             //   .load(R.drawable.lineas)
+             //   .into(gifBackground);
 
         // Configurar el OnClickListener para el Button3 (Pentágono)
         button3.setOnClickListener(new View.OnClickListener() {

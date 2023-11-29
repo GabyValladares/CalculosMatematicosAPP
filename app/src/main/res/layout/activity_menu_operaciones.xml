@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A9F4"
     tools:context=".MenuOperaciones">
-
-    <ImageView
-        android:id="@+id/gifBackground"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lineas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="259dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="358dp"
+        android:layout_height="73dp"
+        android:fontFamily="serif"
         android:text="ELIJA LA OPERACION QUE DESEA REALIZAR"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#F8F8F6"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <GridLayout
         android:id="@+id/gridLayout"
@@ -50,161 +39,222 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="94dp"
+        android:layout_width="184dp"
+        android:layout_height="84dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="140dp"
+        android:fontFamily="serif"
         android:text="NUMEROS PERFECTOS"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F9FCFD"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/btnTrinomio"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
 
     <Button
         android:id="@+id/btn_fibonacci"
-        android:layout_width="0dp"
-        android:layout_height="71dp"
+        android:layout_width="368dp"
+        android:layout_height="69dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="672dp"
         android:onClick="fibonacci"
         android:text="FIBONACCI"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#FCFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
 
     <Button
         android:id="@+id/btnformulageneral"
-        android:layout_width="0dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="236dp"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:fontFamily="serif"
         android:text="FORMULA GENERAL"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F9FCFD"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/btnOperacionesBasicas"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
 
     <Button
         android:id="@+id/btnIrTrapecio"
-        android:layout_width="208dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="416dp"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
         android:text="Trapecio"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F6F8FA"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
 
     <Button
         android:id="@+id/btnOperacionesBasicas"
-        android:layout_width="200dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="236dp"
+        android:layout_width="180dp"
+        android:layout_height="89dp"
+        android:fontFamily="serif"
         android:text="OPERACIONES BASICAS"
-        app:layout_constraintEnd_toStartOf="@+id/btnformulageneral"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F9FCFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
 
     <Button
         android:id="@+id/btnPitagoras"
-        android:layout_width="196dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="552dp"
+        android:layout_width="177dp"
+        android:layout_height="78dp"
         android:onClick="pitagoras"
         android:text="Pitagoras"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F9FCFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
 
     <Button
         android:id="@+id/button7"
 
         android:layout_width="179dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="416dp"
+        android:layout_height="81dp"
         android:text="Area Triangulo"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F6F9FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
 
     <Button
         android:id="@+id/btnNPrimos"
-        android:layout_width="198dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
+        android:layout_width="181dp"
+        android:layout_height="84dp"
         android:text="NUMEROS PRIMOS"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#FCFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/btnPentagono"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684" />
 
     <Button
         android:id="@+id/btn_said"
-        android:layout_width="191dp"
+        android:layout_width="181dp"
         android:layout_height="80dp"
-        android:layout_marginTop="552dp"
-        android:layout_marginEnd="8dp"
         android:text="NUMEROS PRIMOS"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F9FBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
 
     <Button
         android:id="@+id/btnPentagono"
-        android:layout_width="0dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
         android:text="PENTAGONO"
-        app:layout_constraintEnd_toStartOf="@+id/btnNPrimos"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#FAFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnNPrimos"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
 
     <Button
         android:id="@+id/btnTrinomio"
-        android:layout_width="0dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="144dp"
-        android:text="Trinomio-Monomio"
+        android:layout_width="178dp"
+        android:layout_height="84dp"
+        android:fontFamily="serif"
+        android:text="-Trinomio       -Monomio"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F9FCFD"
+        app:iconTint="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
 
     <Button
         android:id="@+id/btnJefersonY"
-        android:layout_width="0dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="320dp"
+        android:layout_width="180dp"
+        android:layout_height="79dp"
         android:text="Operacion Factorial"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F4F7F8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="0dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="320dp"
+        android:layout_width="178dp"
+        android:layout_height="78dp"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/btnJefersonY"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F9FBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
