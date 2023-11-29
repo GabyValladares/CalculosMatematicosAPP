@@ -84,7 +84,7 @@
         android:text="FORMULA GENERAL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/btnOperacionesBasicas"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -101,12 +101,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="87dp"
+        android:id="@+id/btnOperacionesBasicas"
+        android:layout_width="200dp"
+        android:layout_height="81dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="236dp"
-        android:text="Button"
+        android:text="OPERACIONES BASICAS"
         app:layout_constraintEnd_toStartOf="@+id/btnformulageneral"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
