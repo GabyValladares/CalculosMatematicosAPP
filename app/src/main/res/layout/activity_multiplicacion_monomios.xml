@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3F9FB"
+    tools:context=".MultiplicacionMonomios">
+
+    <Button
+        android:id="@+id/bttregresar"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="REGRESAR"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#0E4CAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btttrinomio"
+        android:layout_width="132dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="IR AL TRINOMIO"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#0E4CAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblmonomio2"
+        android:layout_width="147dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="460dp"
+        android:fontFamily="serif-monospace"
+        android:text="RESPUESTA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblmonomio"
+        android:layout_width="392dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
+        android:text="MULTIPLICACION DE MONOMIOS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnumeroone"
+        android:layout_width="202dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="numero" />
+
+    <EditText
+        android:id="@+id/txtnumerotwo"
+        android:layout_width="202dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="284dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="numero" />
+
+    <Button
+        android:id="@+id/bttcalcularmono"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="292dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Calcular"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#0E4CAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblres"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
