@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import com.bumptech.glide.Glide;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bumptech.glide.Glide;
+
 
 public class MenuOperaciones extends AppCompatActivity {
 
@@ -24,11 +24,12 @@ public class MenuOperaciones extends AppCompatActivity {
         TextView titleTextView = findViewById(R.id.titleTextView);
 
         GridLayout gridLayout = findViewById(R.id.gridLayout);
-        Button btOperacionesBasicas=findViewById(R.id.btnOperacionesBasicas);
+        Button btOperacionesBasicas = findViewById(R.id.btnOperacionesBasicas);
 
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button2 = findViewById(R.id.button2);
-
+        Button btnPrimos = findViewById(R.id.btnNPrimos);
+        Button buttonDivision = findViewById(R.id.btn_said);
 
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
@@ -40,44 +41,34 @@ public class MenuOperaciones extends AppCompatActivity {
                 .into(gifBackground);
 
         btOperacionesBasicas.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MenuOperaciones.this, BasicasActivity.class);
+                Intent intent = new Intent(MenuOperaciones.this, BasicasActivity.class);
                 startActivity(intent);
             }
         });
-
-        Button buttonDivision = findViewById(R.id.btn_said);
 
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+            }
+        });
+
+        btnPrimos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
 
                 startActivity(intent);
             }
         });
 
 
-
-
-
-
-
-
-
-
-
-
     }
 
-
-
-
-
-
-
-
 }
-

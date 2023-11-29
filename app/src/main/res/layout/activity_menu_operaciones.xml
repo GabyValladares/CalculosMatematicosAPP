@@ -135,7 +135,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btnNPrimos"
         android:layout_width="0dp"
         android:layout_height="78dp"
         android:layout_marginStart="4dp"
@@ -165,7 +165,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/btnNPrimos"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
