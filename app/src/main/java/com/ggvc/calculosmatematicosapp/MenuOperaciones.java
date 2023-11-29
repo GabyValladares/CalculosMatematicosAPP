@@ -12,8 +12,6 @@ import com.bumptech.glide.Glide;
 
 public class MenuOperaciones extends AppCompatActivity {
 
-    Button btformulag;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,35 +20,24 @@ public class MenuOperaciones extends AppCompatActivity {
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
-        Button button2 = findViewById(R.id.button2);
         Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btnTrinomio = findViewById(R.id.btnTrinomio);
         Button buttonDivision = findViewById(R.id.btn_said);
         Button button3 = findViewById(R.id.btnPentagono);
-
-        btformulag = findViewById(R.id.btnformulageneral);
-
+        Button btformulag = findViewById(R.id.btnformulageneral);
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
+        Button trapecio = findViewById(R.id.btnIrTrapecio);
 
         // Configurar el título
-        titleTextView.setText("Título de la Actividad");
+        titleTextView.setText("ELIJA SU OPERACION");
 
         // Cargar el GIF en el ImageView usando Glide
         Glide.with(this)
                 .asGif()
                 .load(R.drawable.lineas)
                 .into(gifBackground);
-
-        // Configurar el OnClickListener para el Button2
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         // Configurar el OnClickListener para el Button3 (Pentágono)
         button3.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +57,16 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
-        // Otros botones con OnClickListener similares
+        // Configurar el OnClickListener para el Button7
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOperaciones.this, TrianguloActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Configurar el OnClickListener para btnPrimos
         btnPrimos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +75,7 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
+        // Configurar el OnClickListener para buttonDivision
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,6 +84,7 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
+        // Configurar el OnClickListener para btnTrinomio
         btnTrinomio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -100,6 +98,14 @@ public class MenuOperaciones extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MenuOperaciones.this, Factorial.class);
                 startActivity(intent);
+            }
+        });
+
+        trapecio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inte = new Intent(MenuOperaciones.this, TrapecioActivity.class);
+                startActivity(inte);
             }
         });
     }
