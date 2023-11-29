@@ -32,6 +32,8 @@ public class MenuOperaciones extends AppCompatActivity {
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
 
 
+        Button btnJefersonY = findViewById(R.id.btnJefersonY);
+
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
 
@@ -107,7 +109,10 @@ public class MenuOperaciones extends AppCompatActivity {
         btnJefersonY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 // Abrir la actividad Factorial
+=======
+>>>>>>> efd95c78207b32285a696bdd2325835367ab4c20
                 Intent intent = new Intent(MenuOperaciones.this, Factorial.class);
                 startActivity(intent);
             }

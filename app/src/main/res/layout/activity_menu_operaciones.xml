@@ -112,17 +112,22 @@
 
     <Button
         android:id="@+id/btnPitagoras"
-        android:layout_width="203dp"
-        android:layout_height="73dp"
+
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
+
+        android:layout_width="196dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="100dp"
+
         android:onClick="pitagoras"
         android:text="PITAGORAS"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+        <Button
         android:id="@+id/button7"
         android:layout_width="0dp"
         android:layout_height="73dp"
@@ -147,6 +152,31 @@
         app:layout_constraintStart_toEndOf="@+id/btnPentagono"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UnknownId" />
+
+
+    <Button
+        android:id="@+id/btn_said"
+        android:layout_width="191dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="8dp"
+        android:text="NUMEROS PRIMOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPentagono"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="476dp"
+        android:text="PENTAGONO"
+        app:layout_constraintEnd_toStartOf="@+id/btnNPrimos"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/btnTrinomio"
