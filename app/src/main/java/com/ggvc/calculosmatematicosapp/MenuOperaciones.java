@@ -81,6 +81,15 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
+        btnPrimos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOperaciones.this, NumerosPrimos.class);
+                startActivity(intent);
+            }
+        });
+
+
         // Configurar el OnClickListener para btformulag
         btformulag.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,7 +108,12 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
-        // Configurar el OnClickListener para btnPrimos
+
+
+
+
+        // Configurar el OnClickListener para buttonDivision
+
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
