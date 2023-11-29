@@ -11,8 +11,13 @@
         android:id="@+id/bttregresar"
         android:layout_width="120dp"
         android:layout_height="48dp"
+<<<<<<< HEAD
         android:layout_marginStart="272dp"
         android:layout_marginBottom="80dp"
+=======
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="72dp"
+>>>>>>> bb44aae87c636326a016ecd392ea9688ca9a3a77
         android:fontFamily="sans-serif-smallcaps"
         android:text="REGRESAR"
         android:textAllCaps="true"
@@ -21,6 +26,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+<<<<<<< HEAD
+=======
+    <Button
+        android:id="@+id/btttrinomio"
+        android:layout_width="132dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="IR AL TRINOMIO"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#0E4CAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+>>>>>>> bb44aae87c636326a016ecd392ea9688ca9a3a77
     <TextView
         android:id="@+id/lblmonomio2"
         android:layout_width="147dp"
@@ -77,8 +99,13 @@
         android:id="@+id/bttcalcularmono"
         android:layout_width="175dp"
         android:layout_height="75dp"
+<<<<<<< HEAD
         android:layout_marginStart="52dp"
         android:layout_marginBottom="68dp"
+=======
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="292dp"
+>>>>>>> bb44aae87c636326a016ecd392ea9688ca9a3a77
         android:fontFamily="sans-serif-smallcaps"
         android:text="Calcular"
         android:textAllCaps="true"
