@@ -32,6 +32,11 @@
         <activity
             android:name=".TrianguloActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".MainActivitySumar"
+            android:exported="false" />
+
         <activity
             android:name=".MultiplicacionMonomios"
             android:exported="false" />
@@ -58,5 +63,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
     </application>
+
+
 </manifest>
