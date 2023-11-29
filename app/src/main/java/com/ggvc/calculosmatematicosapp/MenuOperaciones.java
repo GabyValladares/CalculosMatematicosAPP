@@ -29,6 +29,7 @@ public class MenuOperaciones extends AppCompatActivity {
         Button btformulag = findViewById(R.id.btnformulageneral);
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
         Button button2 = findViewById(R.id.button2);
+        Button btn_aldaz = findViewById(R.id.btn_aldaz);
 
 
 
@@ -57,6 +58,15 @@ public class MenuOperaciones extends AppCompatActivity {
             public void onClick(View v) {
                 // Abrir la actividad MainActivitySumar
                 Intent intent = new Intent(MenuOperaciones.this, MainNumerosPerfectos.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_aldaz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad MainActivitySumar
+                Intent intent = new Intent(MenuOperaciones.this, exponenciales.class);
                 startActivity(intent);
             }
         });

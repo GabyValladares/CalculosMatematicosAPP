@@ -168,16 +168,16 @@
         android:text="Operacion Factorial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/btn_aldaz"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_aldaz"
         android:layout_width="0dp"
         android:layout_height="86dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="320dp"
-        android:text="Button"
+        android:text="Exponenciales"
         app:layout_constraintEnd_toStartOf="@+id/btnJefersonY"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
