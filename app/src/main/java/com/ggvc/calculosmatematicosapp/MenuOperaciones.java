@@ -23,6 +23,7 @@ public class MenuOperaciones extends AppCompatActivity {
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button2 = findViewById(R.id.button2);
+        Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btnTrinomio = findViewById(R.id.btnTrinomio);
@@ -32,7 +33,6 @@ public class MenuOperaciones extends AppCompatActivity {
         btformulag = findViewById(R.id.btnformulageneral);
 
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
-
 
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
@@ -98,7 +98,6 @@ public class MenuOperaciones extends AppCompatActivity {
         btnJefersonY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Abrir la actividad Factorial
                 Intent intent = new Intent(MenuOperaciones.this, Factorial.class);
                 startActivity(intent);
             }
