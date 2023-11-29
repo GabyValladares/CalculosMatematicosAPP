@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3F9FB"
+    tools:context=".TinomioCuadradoPerfecto">
+
+    <TextView
+        android:id="@+id/txttitulo2"
+        android:layout_width="148dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="504dp"
+        android:fontFamily="serif-monospace"
+        android:text="RESPUESTA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnumerodos"
+        android:layout_width="202dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="284dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="numero" />
+
+    <EditText
+        android:id="@+id/txtnumerotres"
+        android:layout_width="202dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="392dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="numero" />
+
+    <Button
+        android:id="@+id/bttcalcular"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Calcular"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#0E4CAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bttregresarOper"
+        android:layout_width="132dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="REGRESAR"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:backgroundTint="#0E4CAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="252dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
+        android:text="CUADRADO PERFECTO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnumerouno"
+        android:layout_width="202dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="numero" />
+
+    <TextView
+        android:id="@+id/lblrespuesta"
+        android:layout_width="219dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="548dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
