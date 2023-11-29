@@ -45,7 +45,6 @@ public class MenuOperaciones extends AppCompatActivity {
         });
 
 
-
         Button button3 = findViewById(R.id.btnPentagono);
 
 
@@ -80,15 +79,14 @@ public class MenuOperaciones extends AppCompatActivity {
         });
 
 
-
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
 
         // Cargar el GIF en el ImageView usando Glide
         //Glide.with(this)
-                //.asGif()
-                //.load(R.drawable.lineas)
-                //.into(gifBackground);
+        //.asGif()
+        //.load(R.drawable.lineas)
+        //.into(gifBackground);
         btnPrimos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,27 +118,24 @@ public class MenuOperaciones extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
-
-
-                button3.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // Abrir la actividad Area_Perimetro_Pentagono
-                        Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
-                        startActivity(intent);
-                    }
-                });
+                startActivity(intent);
             }
         });
 
-    }
-            public void pitagoras(View v) {
-
-                Intent in = new Intent(MenuOperaciones.this, MainActivity.class);
-                startActivity(in);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad Area_Perimetro_Pentagono
+                Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
+                startActivity(intent);
             }
+        });
+    }
+    public void pitagoras (View v){
 
-
-        }
+        Intent in = new Intent(MenuOperaciones.this, MainActivity.class);
+        startActivity(in);
+    }
+}
 
 
