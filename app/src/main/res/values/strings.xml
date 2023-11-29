@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">CalculosMatematicosAPP</string>
+    <string name="txtBaseMayorTrap">0</string>
+    <string name="txtBaseMenorTrap">0</string>
+    <string name="txtBaseAlturaTrap">0</string>
+    <string name="txtA">0</string>
+    <string name="txtB">0</string>
+    <string name="txtC">0</string>
+    <string name="txtD">0</string>
     <string name="txtNumero"> Numero_1 </string>
 
 </resources>

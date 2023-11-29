@@ -1,5 +1,6 @@
 package com.ggvc.calculosmatematicosapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,16 +17,24 @@ public class MainNumerosPerfectos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
+        setContentView(R.layout.activity_numeros_perfectos);
 
         edNum1 = findViewById(R.id.edNum1);
         tvResultado = findViewById(R.id.tvResultado);
         Button btnVerificar = findViewById(R.id.btnDividir);
+        Button btnVolverMenu = findViewById(R.id.btnVolverMenu); // Agrega esta línea
 
         btnVerificar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 verificarNumeroPerfecto();
+            }
+        });
+
+        btnVolverMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                volverAlMenu();
             }
         });
     }
@@ -64,6 +73,13 @@ public class MainNumerosPerfectos extends AppCompatActivity {
 
         return sumaDivisores == num;
     }
+
+    private void volverAlMenu() {
+        // Aquí implementa el código para volver al activity MenuOperaciones
+        // Puedes utilizar un Intent para iniciar la actividad MenuOperaciones
+        Intent intent = new Intent(MainNumerosPerfectos.this, MenuOperaciones.class);
+        startActivity(intent);
+        // Puedes finalizar la actividad actual si no necesitas volver a ella
+        finish();
+    }
 }
-
-
