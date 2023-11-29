@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
-import com.ggvc.calculosmatematicosapp.R;
 
 public class MenuOperaciones extends AppCompatActivity {
 
@@ -22,7 +21,7 @@ public class MenuOperaciones extends AppCompatActivity {
         TextView titleTextView = findViewById(R.id.titleTextView);
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button7 = findViewById(R.id.button7);
-        Button btnPrimos = findViewById(R.id.btnNPrimos);
+        Button btnPrimos = findViewById(R.id.btnPrimos);
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btnTrinomio = findViewById(R.id.btnTrinomio);
         Button buttonDivision = findViewById(R.id.btn_said);
