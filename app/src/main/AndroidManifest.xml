@@ -27,6 +27,14 @@
             android:name=".FormulaGeneral"
             android:exported="false" />
         <activity
+
+            android:name=".TrianguloActivity"
+            android:exported="false" />
+
+
+
+        <activity
+
             android:name=".MultiplicacionMonomios"
             android:exported="false" />
         <activity
@@ -41,12 +49,15 @@
         <activity
             android:name=".FibonacciActivity"
             android:exported="false" />
-        <activity android:name=".MenuOperaciones"
+
+        <activity
+            android:name=".MenuOperaciones"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 </manifest>
