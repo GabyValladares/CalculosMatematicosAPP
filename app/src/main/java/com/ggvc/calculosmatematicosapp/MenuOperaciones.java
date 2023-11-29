@@ -41,13 +41,13 @@ public class MenuOperaciones extends AppCompatActivity {
                 .into(gifBackground);
 
         // Configurar el OnClickListener para el Button2
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        //button2.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+              //  Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
+            //    startActivity(intent);
+          //  }
+        //});
 
         // Configurar el OnClickListener para el Button3 (Pentágono)
         button3.setOnClickListener(new View.OnClickListener() {
@@ -90,14 +90,14 @@ public class MenuOperaciones extends AppCompatActivity {
         //});
 
         // Configurar el OnClickListener para el Button2
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+       // button2.setOnClickListener(new View.OnClickListener() {
+           // @Override
+            //public void onClick(View v) {
                 // Abrir la actividad MainActivitySumar
-                Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+                //Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
+               // startActivity(intent);
+          //  }
+       // });
 
 
         // Configurar el título
