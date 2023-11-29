@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bimo"
     app:guidelineUseRtl="true"
-    tools:context=".MainActivitySumar">
+    tools:context=".MainNumerosPerfectos">
 
 
     <ImageView

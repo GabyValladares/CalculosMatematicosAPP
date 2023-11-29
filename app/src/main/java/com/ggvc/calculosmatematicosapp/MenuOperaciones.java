@@ -2,10 +2,8 @@ package com.ggvc.calculosmatematicosapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,7 +37,7 @@ public class MenuOperaciones extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Abrir la actividad MainActivitySumar
-                Intent intent = new Intent(MenuOperaciones.this, MainActivitySumar.class);
+                Intent intent = new Intent(MenuOperaciones.this, MainNumerosPerfectos.class);
                 startActivity(intent);
             }
         });
