@@ -113,7 +113,7 @@
     <Button
         android:id="@+id/btnPitagoras"
         android:layout_width="203dp"
-        android:layout_height="73dp"
+        android:layout_height="62dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
         android:onClick="pitagoras"
@@ -139,7 +139,7 @@
         android:layout_width="196dp"
         android:layout_height="60dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="476dp"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -189,7 +189,7 @@
         android:layout_width="204dp"
         android:layout_height="62dp"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="132dp"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -198,8 +198,8 @@
         android:id="@+id/btnPentagono"
         android:layout_width="175dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="132dp"
         android:text="PENTAGONO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
