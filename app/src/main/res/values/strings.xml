@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">CalculosMatematicosAPP</string>
-    <string name="txtBaseMayorTrap">0</string>
-    <string name="txtBaseMenorTrap">0</string>
-    <string name="txtBaseAlturaTrap">0</string>
-    <string name="txtA">0</string>
-    <string name="txtB">0</string>
-    <string name="txtC">0</string>
-    <string name="txtD">0</string>
-    <string name="txtNumero"> Numero_1 </string>
+    <string name="app_name" translatable="false">CalculosMatematicosAPP</string>
+    <string name="txtBaseMayorTrap" translatable="false">0</string>
+    <string name="txtBaseMenorTrap" translatable="false">0</string>
+    <string name="txtBaseAlturaTrap" translatable="false">0</string>
+    <string name="txtA" translatable="false">0</string>
+    <string name="txtB" translatable="false">0</string>
+    <string name="txtC" translatable="false">0</string>
+    <string name="txtD" translatable="false">0</string>
+    <string name="txtNumero" translatable="false"> Numero_1 </string>
 
 </resources>
