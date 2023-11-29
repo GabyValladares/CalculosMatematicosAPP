@@ -130,7 +130,7 @@
         android:layout_height="59dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="412dp"
-        android:text="BUTTON"
+        android:text="OPERACIONES TRIANGULOS"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
