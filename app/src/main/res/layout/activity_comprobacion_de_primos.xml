@@ -13,8 +13,8 @@
         android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="606dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="681dp"
         android:fontFamily="monospace"
         android:text="Comprobar Numeros Primos"
         android:textColor="#E91E63"
@@ -27,8 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="531dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="573dp"
         android:ems="10"
         android:inputType="text" />
 
@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="151dp"
-        android:layout_marginBottom="89dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="120dp"
         android:text="Calcular"
         app:backgroundTint="#E91E63" />
 
@@ -49,8 +49,8 @@
         android:layout_height="101dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="398dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="422dp"
         android:textColor="#27272B"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -62,7 +62,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="121dp"
-        android:layout_marginBottom="301dp"
+        android:layout_marginBottom="323dp"
         android:textColor="#27272B"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -73,8 +73,8 @@
         android:layout_height="73dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="83dp"
-        android:layout_marginBottom="197dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="215dp"
         android:textColor="#27272B"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="279dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="69dp"
         android:text="Regresar" />
 </RelativeLayout>

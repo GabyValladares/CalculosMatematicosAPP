@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A3F9FB"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MultiplicacionMonomios">
 
     <Button
         android:id="@+id/bttregresar"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="72dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="160dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="REGRESAR"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -25,13 +26,13 @@
         android:id="@+id/btttrinomio"
         android:layout_width="132dp"
         android:layout_height="64dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="160dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="IR AL TRINOMIO"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -39,12 +40,14 @@
         android:id="@+id/lblmonomio2"
         android:layout_width="147dp"
         android:layout_height="27dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="392dp"
         android:fontFamily="serif-monospace"
         android:text="RESPUESTA"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E91E63"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,10 +57,12 @@
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif"
         android:text="MULTIPLICACION DE MONOMIOS"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#E91E63"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,13 +96,13 @@
         android:id="@+id/bttcalcularmono"
         android:layout_width="175dp"
         android:layout_height="75dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="276dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Calcular"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -105,8 +110,8 @@
         android:id="@+id/lblres"
         android:layout_width="189dp"
         android:layout_height="56dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="448dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

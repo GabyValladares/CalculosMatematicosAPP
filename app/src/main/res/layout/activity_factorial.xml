@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/perro_jake"
     tools:context=".Factorial">
 
     <TextView
         android:id="@+id/lblTitulo"
         android:layout_width="362dp"
         android:layout_height="141dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
         android:text="OPERACION FACTORIAL"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#E91E63"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,20 +22,20 @@
         android:id="@+id/lblTituloNumero"
         android:layout_width="173dp"
         android:layout_height="67dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="132dp"
         android:text="INGRESA UN NUMERO:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <TextView
         android:id="@+id/lblTituloResultado"
         android:layout_width="146dp"
         android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="356dp"
         android:text="RESULTADO:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,11 +45,10 @@
         android:id="@+id/txtNumero"
         android:layout_width="131dp"
         android:layout_height="70dp"
-        android:layout_marginTop="484dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="132dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Numero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,9 +56,8 @@
         android:id="@+id/lblResultado"
         android:layout_width="351dp"
         android:layout_height="61dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="24dp"
-        android:text="Text"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="272dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -67,10 +65,10 @@
         android:id="@+id/btnCalcular"
         android:layout_width="160dp"
         android:layout_height="62dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="172dp"
         android:text="Calcular"
-        app:backgroundTint="#FAF4F4"
+        app:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -78,8 +76,9 @@
         android:id="@+id/btnRegresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="692dp"
+        android:backgroundTint="#E91E63"
         android:text="REGRESAR"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

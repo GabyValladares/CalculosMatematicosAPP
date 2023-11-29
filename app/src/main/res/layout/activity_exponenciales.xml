@@ -8,36 +8,53 @@
 
     <EditText
         android:id="@+id/edtBase"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ingrese el entero"/>
+        android:layout_width="327dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="22dp"
+        android:hint="Ingrese el entero" />
 
     <EditText
         android:id="@+id/edtExponente"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="315dp"
+        android:layout_height="76dp"
         android:layout_below="@id/edtBase"
-        android:hint="Ingrese el exponente"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="41dp"
+        android:hint="Ingrese el exponente" />
 
     <Button
         android:id="@+id/btnCalcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="159dp"
+        android:layout_height="73dp"
         android:layout_below="@id/edtExponente"
-        android:text="Calcular"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="325dp"
+        android:layout_marginEnd="122dp"
+        android:backgroundTint="#E91E63"
+        android:text="Calcular" />
 
     <TextView
         android:id="@+id/txtResultado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="315dp"
+        android:layout_height="81dp"
         android:layout_below="@id/btnCalcular"
-        android:layout_marginTop="16dp"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-361dp"
+        android:layout_marginEnd="51dp" />
 
     <Button
         android:id="@+id/btnRegresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="155dp"
+        android:layout_height="83dp"
         android:layout_below="@id/txtResultado"
-        android:text="Regresar"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="129dp"
+        android:backgroundTint="#E91E63"
+        android:text="Regresar" />
 
 </RelativeLayout>

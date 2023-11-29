@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E7F4FA"
+    android:background="#FBFBFB"
     android:onClick="calcula"
     tools:context=".teoremaPitagoras">
 
@@ -28,10 +28,11 @@
         android:layout_height="69dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="84dp"
+        android:fontFamily="sans-serif"
         android:text="TEOREMA DE PITAGORAS"
         android:textAlignment="center"
-        android:textColor="#121212"
-        android:textSize="16sp"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -105,23 +106,23 @@
         android:id="@+id/btnCalcular"
         android:layout_width="127dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="188dp"
         android:onClick="calcula"
         android:text="CALCULAR"
         android:textAlignment="center"
-        android:textColor="#1B1919"
-        app:backgroundTint="#CFB1B1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#E91E63"
         app:iconTint="#FFF6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/lblResultado"
-        android:layout_width="84dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="260dp"
+        android:layout_width="113dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="312dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
