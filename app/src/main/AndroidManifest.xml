@@ -26,26 +26,16 @@
         <activity
             android:name=".FormulaGeneral"
             android:exported="false" />
-<<<<<<< HEAD
-=======
 
->>>>>>> efd95c78207b32285a696bdd2325835367ab4c20
         <activity
-
             android:name=".TrianguloActivity"
             android:exported="false" />
 
-<<<<<<< HEAD
-
-
-=======
         <activity
             android:name=".MainActivitySumar"
             android:exported="false" />
 
->>>>>>> efd95c78207b32285a696bdd2325835367ab4c20
         <activity
-
             android:name=".MultiplicacionMonomios"
             android:exported="false" />
         <activity
@@ -71,31 +61,8 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-<<<<<<< HEAD
         </activity>
-
 
     </application>
 
-
-
-
-
-
-
-
-
-
-
-=======
-
-        </activity>
-
-        <activity
-            android:name=".Factorial"
-            android:exported="false" />
-
-    </application>
-
->>>>>>> efd95c78207b32285a696bdd2325835367ab4c20
 </manifest>
