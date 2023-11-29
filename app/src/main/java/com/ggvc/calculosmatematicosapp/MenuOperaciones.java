@@ -71,6 +71,15 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad MainActivitySumar
+                Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
+                startActivity(intent);
+            }
+        });
+
 
         // Configurar el OnClickListener para btformulag
         btformulag.setOnClickListener(new View.OnClickListener() {
