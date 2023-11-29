@@ -66,7 +66,7 @@
         android:layout_width="0dp"
         android:layout_height="71dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="644dp"
+        android:layout_marginTop="672dp"
         android:onClick="fibonacci"
         android:text="FIBONACCI"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,8 +114,8 @@
 
     <Button
         android:id="@+id/btnPitagoras"
-        android:layout_width="203dp"
-        android:layout_height="73dp"
+        android:layout_width="189dp"
+        android:layout_height="75dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="476dp"
         android:onClick="pitagoras"
@@ -142,7 +142,7 @@
         android:layout_marginTop="476dp"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btnPentagono"
         app:layout_constraintTop_toTopOf="parent"

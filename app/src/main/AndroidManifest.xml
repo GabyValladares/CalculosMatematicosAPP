@@ -19,7 +19,6 @@
             android:exported="false"/>
         <activity
             android:name=".TrapecioActivity"
-
             android:exported="false"/>
         <activity
             android:name=".MainActivity"
@@ -30,7 +29,6 @@
         <activity
             android:name=".FormulaGeneral"
             android:exported="false" />
-
         <activity
             android:name=".TrianguloActivity"
             android:exported="false" />
