@@ -28,6 +28,7 @@ public class MenuOperaciones extends AppCompatActivity {
 
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button2 = findViewById(R.id.button2);
+        Button btnJefersonY = findViewById(R.id.btnJefersonY);
 
 
         Button button7 = findViewById(R.id.button7);
@@ -86,8 +87,6 @@ public class MenuOperaciones extends AppCompatActivity {
             }
         });
 
-
-
         // Configurar el título
         titleTextView.setText("Título de la Actividad");
 
@@ -98,41 +97,49 @@ public class MenuOperaciones extends AppCompatActivity {
                 //.into(gifBackground);
         btnPrimos.setOnClickListener(new View.OnClickListener() {
 
-        // Configurar el OnClickListener para el Button2
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            // Configurar el OnClickListener para el Button2
+        button2.setOnClickListener(new View.OnClickListener()
+
+            {
+                @Override
+                public void onClick (View v){
                 // Abrir la actividad MainActivitySumar
                 Intent intent = new Intent(MenuOperaciones.this, MainActivity.class);
                 startActivity(intent);
             }
-        });
+            });
 
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        button7.setOnClickListener(new View.OnClickListener()
+
+            {
+                @Override
+                public void onClick (View v){
                 Intent intent = new Intent(MenuOperaciones.this, TrianguloActivity.class);
                 startActivity(intent);
             }
 
-        });
-                GridLayout gridLayout = findViewById(R.id.gridLayout);
+            });
+            GridLayout gridLayout = findViewById(R.id.gridLayout);
 
-                // Configurar el título
+            // Configurar el título
                 titleTextView.setText("Título de la Actividad");
 
-        btnTrinomio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnTrinomio.setOnClickListener(new View.OnClickListener()
+
+            {
+                @Override
+                public void onClick (View view){
                 Intent intent = new Intent(MenuOperaciones.this, MultiplicacionMonomios.class);
                 startActivity(intent);
             }
-        });
+            });
 
 
-        buttonDivision.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        buttonDivision.setOnClickListener(new View.OnClickListener()
+
+            {
+                @Override
+                public void onClick (View view){
 
                 Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
 
@@ -146,9 +153,19 @@ public class MenuOperaciones extends AppCompatActivity {
                     }
                 });
             }
-        });
+            });
 
-    }
+        btnJefersonY.setOnClickListener(new View.OnClickListener()
+
+            {
+                @Override
+                public void onClick (View v){
+                // Abrir la actividad Factorial
+                Intent intent = new Intent(MenuOperaciones.this, Factorial.class);
+                startActivity(intent);
+            }
+            });
+
             public void pitagoras(View v) {
 
                 Intent in = new Intent(MenuOperaciones.this, MainActivity.class);
@@ -182,14 +199,16 @@ public class MenuOperaciones extends AppCompatActivity {
 
 
 
-        btnTrinomio.setOnClickListener(new View.OnClickListener(){
+        btnTrinomio.setOnClickListener(new View.OnClickListener() {
 
-        @Override
-        public void onClick (View view){
-        Intent intent = new Intent(MenuOperaciones.this, MultiplicacionMonomios.class);
-        startActivity(intent);
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuOperaciones.this, MultiplicacionMonomios.class);
+                startActivity(intent);
+            }
+        });
     }
-    }
+
 
 
 
