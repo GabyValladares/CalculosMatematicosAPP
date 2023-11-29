@@ -122,30 +122,14 @@
         android:text="PITAGORAS"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
-
-
-
-        tools:layout_editor_absoluteX="64dp"="32dp"="112dp"
-        tools:layout_editor_absoluteX="50dp" />
-    =======
-        android:text="Operaciones Triangulos"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
->>>>>>> 6898f5ea3cefb6fdcaef31197c0e55804dad56e6
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    ]]>
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="155dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="424dp"
+        android:layout_width="201dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="412dp"
         android:text="BUTTON"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
