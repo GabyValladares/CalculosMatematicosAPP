@@ -167,8 +167,8 @@
         android:id="@+id/btn_said"
         android:layout_width="191dp"
         android:layout_height="80dp"
-        android:layout_marginTop="552dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="224dp"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
@@ -236,11 +236,11 @@
         android:layout_width="196dp"
         android:layout_height="76dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="112dp"
         android:text="PENTAGONO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-=======
+    =======
 
 >>>>>>> a9bc57e31c2d3f666f99b5978a81e3973a1d4a4f
 
