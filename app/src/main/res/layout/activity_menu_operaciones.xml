@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/spiderman"
     tools:context=".MenuOperaciones">
-
-    <ImageView
-        android:id="@+id/gifBackground"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lineas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="259dp"
         android:layout_height="63dp"
-        android:layout_marginTop="44dp"
-        android:text="ELIJA LA OPERACION QUE DESEA REALIZAR"
+        android:layout_marginTop="4dp"
+        android:text="CALCULA TU OPERACION"
         android:textAlignment="center"
-        android:textColor="#FDFBFB"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:textColor="@color/material_dynamic_neutral0"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,15 +34,18 @@
         <!-- Botones se agregarán dinámicamente en el código Java/Kotlin -->
     </GridLayout>
 
+
     <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="94dp"
+        android:id="@+id/btnNumPer"
+        android:layout_width="182dp"
+        android:layout_height="62dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="92dp"
         android:text="NUMEROS PERFECTOS"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/btnTrinomio"
         app:layout_constraintTop_toTopOf="parent" />
@@ -65,175 +54,176 @@
         android:id="@+id/btn_fibonacci"
         android:layout_width="331dp"
         android:layout_height="71dp"
-<<<<<<< HEAD
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="16dp"
-=======
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="612dp"
->>>>>>> 2d30b3fefb3ae70a924baae6612fbdf829460029
+
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="44dp"
+
         android:onClick="fibonacci"
         android:text="FIBONACCI"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnformulageneral"
-        android:layout_width="0dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="236dp"
+        android:layout_width="180dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="4dp"
         android:text="FORMULA GENERAL"
+        android:textColor="@color/design_default_color_error"
+
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnIrTrapecio"
-        android:layout_width="190dp"
-        android:layout_height="81dp"
+        android:layout_width="192dp"
+        android:layout_height="63dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="404dp"
+        android:layout_marginTop="348dp"
         android:text="Trapecio"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="87dp"
+        android:id="@+id/btnOperacionesBasicas"
+        android:layout_width="192dp"
+        android:layout_height="62dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="236dp"
-        android:text="Button"
+        android:layout_marginTop="184dp"
+        android:text="OPERACIONES BASICAS"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintEnd_toStartOf="@+id/btnformulageneral"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnPitagoras"
-        android:layout_width="203dp"
+        android:layout_width="195dp"
         android:layout_height="62dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
+        android:layout_marginTop="436dp"
         android:onClick="pitagoras"
         android:text="Pitagoras"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="218dp"
-        android:layout_height="71dp"
+        android:layout_width="194dp"
+        android:layout_height="68dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginTop="348dp"
         android:text="Area Triangulo"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
         android:id="@+id/btnNPrimos"
-        android:layout_width="202dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="476dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="4dp"
         android:text="Numeros Primos"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_said"
-        android:layout_width="169dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="560dp"
-        android:layout_marginEnd="16dp"
-        android:text="NUMEROS PRIMOS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnPentagono"
-        android:layout_width="210dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="560dp"
-        android:text="PENTAGONO"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
 
     <Button
         android:id="@+id/btnTrinomio"
-        android:layout_width="0dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="144dp"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
         android:text="Trinomio-Monomio"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
 
     <Button
         android:id="@+id/btnJefersonY"
-        android:layout_width="0dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="320dp"
+        android:layout_width="184dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="4dp"
         android:text="Operacion Factorial"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
     <Button
         android:id="@+id/button5"
-        android:layout_width="0dp"
-        android:layout_height="86dp"
+        android:layout_width="193dp"
+        android:layout_height="65dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="320dp"
         android:text="Button"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnJefersonY"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
 
-<<<<<<< HEAD
-=======
     <Button
         android:id="@+id/btn_said"
 
-        android:layout_width="208dp"
+        android:layout_width="194dp"
 
-        android:layout_height="67dp"
+        android:layout_height="65dp"
 
 
         android:layout_marginStart="4dp"
 
-        android:layout_marginTop="544dp"
+        android:layout_marginTop="520dp"
 
 
         android:text="NUMEROS PRIMOS"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnPentagono"
-        android:layout_width="196dp"
-        android:layout_height="74dp"
+        android:layout_width="178dp"
+        android:layout_height="64dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="144dp"
         android:text="PENTAGONO"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
->>>>>>> 2d30b3fefb3ae70a924baae6612fbdf829460029
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A3F9FB"
+    android:background="@drawable/spiderman"
     tools:context=".TinomioCuadradoPerfecto">
 
     <TextView
@@ -16,6 +16,7 @@
         android:fontFamily="serif-monospace"
         android:text="RESPUESTA"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/design_default_color_error"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -55,8 +56,9 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="Calcular"
         android:textAllCaps="true"
+        android:textColor="@color/design_default_color_error"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -69,8 +71,9 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="REGRESAR"
         android:textAllCaps="true"
+        android:textColor="@color/design_default_color_error"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -83,6 +86,7 @@
         android:fontFamily="serif-monospace"
         android:text="CUADRADO PERFECTO"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/design_default_color_error"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

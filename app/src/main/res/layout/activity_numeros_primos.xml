@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/regularshow"
+    android:background="@drawable/spiderman"
     tools:context=".NumerosPrimos">
 
     <TextView
@@ -15,7 +15,8 @@
         android:text="COMPROBACION DE                                             NUMEROS PRIMOS"
         android:textAlignment="center"
         android:textColor="#FB0707"
-        android:textSize="34sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="INGRESE UN NUMERO"
-        android:textColor="#7B1FA2"
+        android:textColor="@color/design_default_color_on_secondary"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,14 +44,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="SU NUMERO ES:"
-        android:textColor="#7B1FA2"
+        android:textColor="@color/design_default_color_on_secondary"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintVertical_bias="0.545" />
 
     <EditText
         android:id="@+id/txtnum"
@@ -83,6 +84,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VERIFICAR"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.264"
@@ -95,6 +98,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VOLVER"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.722"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/spiderman"
     tools:context=".TriangulosActivity">
 
     <EditText
@@ -24,6 +25,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Area de los Triangulos"
+        android:textColor="@color/design_default_color_error"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,6 +48,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="132dp"
         android:text="Altura"
+        android:textColor="@color/design_default_color_error"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtAltura"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +62,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="184dp"
         android:text="Base"
+        android:textColor="@color/design_default_color_error"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtBase"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,6 +76,8 @@
         android:layout_marginTop="316dp"
         android:onClick="CalcularEquilatero"
         android:text="Equilatero"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,6 +89,8 @@
         android:layout_marginTop="316dp"
         android:onClick="CalcularEscaleno"
         android:text="Escaleno"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -104,6 +112,8 @@
         android:layout_marginTop="316dp"
         android:onClick="CalcularIsoceles"
         android:text="Isoceles"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,6 +124,8 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:text="Regresar"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

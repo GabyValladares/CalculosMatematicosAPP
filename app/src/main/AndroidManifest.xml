@@ -16,6 +16,7 @@
 
         <activity
 
+
             android:name=".MainNumerosPerfectos"
             android:exported="false"/>
         <activity
@@ -33,6 +34,7 @@
         <activity
             android:name=".TrianguloActivity"
             android:exported="false" />
+
 
         <activity
             android:name=".MainActivitySumar"
@@ -56,9 +58,19 @@
         <activity
             android:name=".Factorial"
             android:exported="false"/>
+
+
+
         <activity
-            android:name=".MenuOperaciones"
-            android:exported="true">
+            android:name=".BasicasActivity"
+            android:exported="false">
+
+         </activity>
+
+
+        <activity android:name=".MenuOperaciones"
+                   android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

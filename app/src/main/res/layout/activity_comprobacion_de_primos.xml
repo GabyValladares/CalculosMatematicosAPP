@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_foreground"
+    android:background="@drawable/spiderman"
     tools:context=".ComprobacionDePrimos">
 
     <TextView
@@ -18,8 +18,8 @@
         android:fontFamily="monospace"
         android:text="Comprobar Numeros Primos"
         android:textColor="#E91E63"
-        android:textSize="34sp"
-        android:textStyle="bold|italic" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtNumero"
@@ -41,7 +41,8 @@
         android:layout_marginEnd="151dp"
         android:layout_marginBottom="89dp"
         android:text="Calcular"
-        app:backgroundTint="#E91E63" />
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20" />
 
     <TextView
         android:id="@+id/lblRespuesta"
@@ -87,5 +88,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="279dp"
         android:layout_marginBottom="17dp"
-        android:text="Regresar" />
+        android:text="Regresar"
+        android:textColor="@color/design_default_color_error"
+        app:backgroundTint="@color/material_dynamic_secondary20" />
 </RelativeLayout>
