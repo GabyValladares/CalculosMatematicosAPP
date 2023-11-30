@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/_8706326_rm251_mind_01_f"
     tools:context=".BasicasActivity">
 
     <Button
@@ -62,6 +63,7 @@
         android:layout_marginTop="516dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/txtNum3" />
@@ -74,6 +76,7 @@
         android:layout_marginTop="16dp"
         android:text="OPERACIONES BÁSICAS"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,6 +90,7 @@
         android:layout_marginTop="108dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/txtNum1" />
@@ -99,8 +103,19 @@
         android:layout_marginTop="212dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/txtNum2" />
+
+    <Button
+        android:id="@+id/btnregresaOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="56dp"
+        android:text="REGRESAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

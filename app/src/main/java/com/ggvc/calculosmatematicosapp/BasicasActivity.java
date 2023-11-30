@@ -1,5 +1,6 @@
 package com.ggvc.calculosmatematicosapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,20 +12,20 @@ import androidx.appcompat.app.AppCompatActivity;
 public class BasicasActivity extends AppCompatActivity {
 
     EditText edNum1,edNum2,edResul;
-    Button btSumar,btRestar,btMultiplicar,btDividir;
+    Button btSumar,btRestar,btMultiplicar,btDividir,btRegresar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basicas);
-        edNum1=findViewById(R.id.txtNum1);
-        edNum2=findViewById(R.id.txtNum2);
+        edNum1 = findViewById(R.id.txtNum1);
+        edNum2 = findViewById(R.id.txtNum2);
 
-        edResul=findViewById(R.id.txtNum3);
-        btSumar=findViewById(R.id.btnSuma);
-        btRestar=findViewById(R.id.btnRestar);
-        btMultiplicar=findViewById(R.id.btnMultiplicar);
-        btDividir=findViewById(R.id.btnDividir);
-
+        edResul = findViewById(R.id.txtNum3);
+        btSumar = findViewById(R.id.btnSuma);
+        btRestar = findViewById(R.id.btnRestar);
+        btMultiplicar = findViewById(R.id.btnMultiplicar);
+        btDividir = findViewById(R.id.btnDividir);
+        btRegresar = findViewById(R.id.btnregresaOB);
 
         btSumar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +66,14 @@ public class BasicasActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(BasicasActivity.this,"NO SE PUEDE DIVIDIR PARA 0",Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        btRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BasicasActivity.this, MenuOperaciones.class);
+                startActivity(intent);
             }
         });
     }

@@ -23,8 +23,6 @@ public class MenuOperaciones extends AppCompatActivity {
 
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btOperacionesBasicas = findViewById(R.id.btnOperacionesBasicas);
-
-        ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
 

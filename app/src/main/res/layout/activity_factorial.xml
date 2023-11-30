@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/perro_jake"
+    android:background="@drawable/_8706326_rm251_mind_01_f"
     tools:context=".Factorial">
 
     <TextView
@@ -15,6 +15,7 @@
         android:layout_marginTop="120dp"
         android:text="OPERACION FACTORIAL"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +26,7 @@
         android:layout_marginStart="16dp"
         android:text="INGRESA UN NUMERO:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -38,6 +40,7 @@
         android:layout_marginBottom="104dp"
         android:text="RESULTADO:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -50,6 +53,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Numero"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,6 +64,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="24dp"
         android:text="Text"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -70,7 +75,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="112dp"
         android:text="Calcular"
-        app:backgroundTint="#FAF4F4"
+        app:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
