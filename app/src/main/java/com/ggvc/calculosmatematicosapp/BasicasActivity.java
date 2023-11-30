@@ -1,5 +1,6 @@
 package com.ggvc.calculosmatematicosapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -67,6 +68,10 @@ public class BasicasActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    public  void regresar(View v){
+        Intent in= new Intent(BasicasActivity.this,MenuOperaciones.class);
+        startActivity(in);
     }
 
 }

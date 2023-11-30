@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#03A9F4"
+    android:background="#93C4DA"
     tools:context=".MenuOperaciones">
 
     <TextView
@@ -160,25 +160,25 @@
 
     <Button
         android:id="@+id/btnNPrimos"
-        android:layout_width="181dp"
-        android:layout_height="84dp"
+        android:layout_width="178dp"
+        android:layout_height="82dp"
         android:text="NUMEROS PRIMOS"
         android:textColor="#03A9F4"
         android:textStyle="bold"
         app:backgroundTint="#FCFDFD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684" />
+        app:layout_constraintVertical_bias="0.682" />
 
     <Button
         android:id="@+id/btn_said"
-        android:layout_width="181dp"
-        android:layout_height="80dp"
-        android:text="NUMEROS PRIMOS"
+        android:layout_width="177dp"
+        android:layout_height="78dp"
+        android:text="COMPROBACION PRIMOS"
         android:textColor="#03A9F4"
         android:textStyle="bold"
         app:backgroundTint="#F9FBFB"
@@ -250,11 +250,11 @@
         app:backgroundTint="#F9FBFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.462" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

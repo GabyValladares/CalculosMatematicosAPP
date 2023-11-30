@@ -4,36 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bimo"
+    android:background="#93C4DA"
     app:guidelineUseRtl="true"
     tools:context=".MainNumerosPerfectos">
 
-
-    <ImageView
-        android:id="@+id/backgroundImageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lineas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnVolverMenu"
         android:layout_width="217dp"
         android:layout_height="63dp"
+        android:fontFamily="serif"
         android:text="VOLVER"
+        android:textColor="#03A9F4"
         android:textSize="34sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FDFBFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintVertical_bias="0.91" />
 
     <TextView
         android:layout_width="211dp"
@@ -48,7 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108" />
+        app:layout_constraintVertical_bias="0.108"
+        tools:fontFamily="serif" />
 
     <TextView
         android:id="@+id/textView"
@@ -64,12 +56,13 @@
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368" />
+        app:layout_constraintVertical_bias="0.368"
+        tools:fontFamily="serif" />
 
     <EditText
         android:id="@+id/edNum1"
-        android:layout_width="168dp"
-        android:layout_height="70dp"
+        android:layout_width="183dp"
+        android:layout_height="85dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="text"
@@ -80,7 +73,8 @@
         app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.431"
+        tools:text="......" />
 
     <TextView
         android:id="@+id/textView3"
@@ -99,8 +93,8 @@
 
     <TextView
         android:id="@+id/tvResultado"
-        android:layout_width="215dp"
-        android:layout_height="199dp"
+        android:layout_width="199dp"
+        android:layout_height="103dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Resultado"
@@ -110,16 +104,22 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintVertical_bias="0.777"
+        tools:fontFamily="serif" />
 
     <Button
         android:id="@+id/btnDividir"
-        android:layout_width="92dp"
-        android:layout_height="95dp"
+        android:layout_width="95dp"
+        android:layout_height="112dp"
+        android:fontFamily="serif"
         android:text="OK"
+        android:textColor="#03A9F4"
         android:textSize="34sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FBFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.846"

@@ -4,62 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A3F9FB"
+    android:background="#93C4DA"
     tools:context=".MultiplicacionMonomios">
 
     <Button
         android:id="@+id/bttregresar"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="72dp"
+        android:layout_width="138dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="88dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="REGRESAR"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#FBFCFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:fontFamily="serif" />
 
     <Button
         android:id="@+id/btttrinomio"
         android:layout_width="132dp"
         android:layout_height="64dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="88dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="IR AL TRINOMIO"
         android:textAllCaps="true"
+        android:textColor="#03A9F4"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#FEFEFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:fontFamily="serif" />
 
     <TextView
         android:id="@+id/lblmonomio2"
         android:layout_width="147dp"
         android:layout_height="27dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="460dp"
         android:fontFamily="serif-monospace"
         android:text="RESPUESTA"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FBF9F9"
         android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519"
+        tools:fontFamily="serif" />
 
     <TextView
         android:id="@+id/lblmonomio"
-        android:layout_width="392dp"
-        android:layout_height="36dp"
+        android:layout_width="382dp"
+        android:layout_height="81dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:fontFamily="serif-monospace"
         android:text="MULTIPLICACION DE MONOMIOS"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FBFBFB"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="serif" />
 
     <EditText
         android:id="@+id/txtnumeroone"
@@ -70,6 +85,8 @@
         android:ems="10"
         android:fontFamily="sans-serif-condensed-light"
         android:inputType="text"
+        android:textColor="#FBF9F9"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="numero" />
@@ -83,30 +100,39 @@
         android:ems="10"
         android:fontFamily="sans-serif-condensed-light"
         android:inputType="text"
+        android:textColor="#FBF9F9"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="numero" />
 
     <Button
         android:id="@+id/bttcalcularmono"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="292dp"
+        android:layout_width="148dp"
+        android:layout_height="61dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Calcular"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#F4F5F8"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793"
+        tools:fontFamily="serif" />
 
     <TextView
         android:id="@+id/lblres"
         android:layout_width="189dp"
         android:layout_height="56dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="500dp"
+        android:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
 </androidx.constraintlayout.widget.ConstraintLayout>

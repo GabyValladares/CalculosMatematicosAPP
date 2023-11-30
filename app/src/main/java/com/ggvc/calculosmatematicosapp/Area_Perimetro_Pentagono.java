@@ -8,16 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Area_Perimetro_Pentagono extends AppCompatActivity {
     private EditText edlado, edarea, edareaP;
     private TextView edResultadoPerimetro, edResultadoarea, edResMulti, edArespuesta;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_area_perimetro_pentagono);
+
         edlado = findViewById(R.id.id_lado);
         edarea = findViewById(R.id.idArea);
         edareaP = findViewById(R.id.idPArea);
@@ -25,19 +26,24 @@ public class Area_Perimetro_Pentagono extends AppCompatActivity {
         edResultadoarea = findViewById(R.id.idArespuesta);
         edResMulti = findViewById(R.id.idResMulti);
         edArespuesta = findViewById(R.id.idArespuesta);
+
         Button btnAtras = findViewById(R.id.btnAtras);
         btnAtras.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    // Abrir la actividad Area_Perimetro_Pentagono
-                    Intent intent = new Intent(Area_Perimetro_Pentagono.this, MenuOperaciones.class);
-                    startActivity(intent);
-                }
-            });
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad MenuOperaciones
+                Intent intent = new Intent(Area_Perimetro_Pentagono.this, MenuOperaciones.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void calcularperimetro(View v) {
+        if (edlado.getText().toString().trim().isEmpty()) {
+            mostrarMensaje("Por favor, ingrese un valor para el lado");
+            return;
+        }
+
         double num1 = Double.parseDouble(edlado.getText().toString());
         double resultadoPerimetro = num1 * 5;
 
@@ -46,18 +52,23 @@ public class Area_Perimetro_Pentagono extends AppCompatActivity {
     }
 
     public void calculararea(View v) {
+        if (edareaP.getText().toString().trim().isEmpty() || edarea.getText().toString().trim().isEmpty()) {
+            mostrarMensaje("Por favor, complete todos los campos");
+            return;
+        }
+
         double area = Double.parseDouble(edareaP.getText().toString());
         double area2 = Double.parseDouble(edarea.getText().toString());
         double resultadoa = area * area2;
         edResMulti.setText(resultadoa + "");
         double resul = resultadoa / 2;
         edResultadoarea.setText(resul + "");
-
-
     }
 
-
+    private void mostrarMensaje(String mensaje) {
+        Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
     }
+}
 
 
 

@@ -37,34 +37,54 @@ public class TrianguloActivity extends AppCompatActivity {
         });
     }
 
-    public void CalcularEscaleno(View v){
-        double base = Double.parseDouble(txtBase.getText().toString());
-        double altura = Double.parseDouble(txtAltura.getText().toString());
-        if (base == 0 || altura == 0) {
-            Toast.makeText(TrianguloActivity.this, "Llene los Espacios", Toast.LENGTH_LONG).show();
-        } else {
-            double Resultado = (1 / 2) * base * altura;
-            lblResultado.setText("El area del Triangulo Escaleno es: " + Resultado);
+
+    public void CalcularEscaleno(View v) {
+        String strBase = txtBase.getText().toString();
+        String strAltura = txtAltura.getText().toString();
+
+        if (strBase.isEmpty() || strAltura.isEmpty()) {
+            mostrarToast("Llene todos los campos");
+            return;
         }
+
+        double base = Double.parseDouble(strBase);
+        double altura = Double.parseDouble(strAltura);
+
+        double resultado = (1 / 2) * base * altura;
+        lblResultado.setText("El área del Triángulo Escaleno es: " + resultado);
     }
-    public void CalcularIsoceles(View v){
-        double base = Double.parseDouble(txtBase.getText().toString());
-        double altura = Double.parseDouble(txtAltura.getText().toString());
-        if (base == 0 || altura == 0) {
-            Toast.makeText(TrianguloActivity.this, "Llene los Espacios", Toast.LENGTH_LONG).show();
-        } else {
-            double Resultado = (1 / 2) * base * altura;
-            lblResultado.setText("El area del Triangulo Isoceles es: " + Resultado);
+
+    public void CalcularIsoceles(View v) {
+        String strBase = txtBase.getText().toString();
+        String strAltura = txtAltura.getText().toString();
+
+        if (strBase.isEmpty() || strAltura.isEmpty()) {
+            mostrarToast("Llene todos los campos");
+            return;
         }
+
+        double base = Double.parseDouble(strBase);
+        double altura = Double.parseDouble(strAltura);
+
+        double resultado = (1 / 2) * base * altura;
+        lblResultado.setText("El área del Triángulo Isósceles es: " + resultado);
     }
-    public void CalcularEquilatero(View v){
-        double base = Double.parseDouble(txtAltura.getText().toString());
-        if (base == 0){
-            Toast.makeText(TrianguloActivity.this, "Llene los Espacios", Toast.LENGTH_LONG).show();
-        } else {
-            double resultado = (Math.sqrt(3)/4)*(base*base);
-            lblResultado.setText("El area del Triangulo Equilatero es: " + resultado);
+
+    public void CalcularEquilatero(View v) {
+        String strBase = txtBase.getText().toString();
+
+        if (strBase.isEmpty()) {
+            mostrarToast("Llene todos los campos");
+            return;
         }
+
+        double base = Double.parseDouble(strBase);
+        double resultado = (Math.sqrt(3) / 4) * (base * base);
+        lblResultado.setText("El área del Triángulo Equilátero es: " + resultado);
+    }
+
+    private void mostrarToast(String mensaje) {
+        Toast.makeText(TrianguloActivity.this, mensaje, Toast.LENGTH_LONG).show();
     }
 
 

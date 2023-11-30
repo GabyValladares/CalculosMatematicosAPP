@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#93C4DA"
     tools:context=".BasicasActivity">
 
     <Button
@@ -13,8 +14,10 @@
         android:layout_marginStart="304dp"
         android:layout_marginTop="376dp"
         android:text="/"
+        android:textColor="#03A9F4"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:backgroundTint="#F4F4F4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +28,10 @@
         android:layout_marginStart="104dp"
         android:layout_marginTop="376dp"
         android:text="-"
+        android:textColor="#03A9F4"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:backgroundTint="#FDFCFC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,8 +42,10 @@
         android:layout_marginStart="204dp"
         android:layout_marginTop="376dp"
         android:text="*"
+        android:textColor="#03A9F4"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:backgroundTint="#F8F4F4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,8 +56,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="376dp"
         android:text="+"
+        android:textColor="#03A9F4"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:backgroundTint="#FAF6F6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,8 +81,10 @@
         android:layout_height="60dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="serif"
         android:text="OPERACIONES BÁSICAS"
         android:textAlignment="center"
+        android:textColor="#FAF8F8"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,5 +113,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/txtNum2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="124dp"
+        android:onClick="regresar"
+        android:text="REGRESAR"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F4F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

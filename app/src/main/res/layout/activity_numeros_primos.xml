@@ -4,23 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/regularshow"
+    android:background="#93C4DA"
     tools:context=".NumerosPrimos">
 
     <TextView
         android:id="@+id/lbltitle"
-        android:layout_width="327dp"
-        android:layout_height="100dp"
+        android:layout_width="328dp"
+        android:layout_height="138dp"
         android:fontFamily="sans-serif-black"
         android:text="COMPROBACION DE                                             NUMEROS PRIMOS"
         android:textAlignment="center"
-        android:textColor="#FB0707"
+        android:textColor="#FAF6F6"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.098"
+        tools:fontFamily="serif" />
 
     <TextView
         android:id="@+id/lbling"
@@ -28,14 +29,15 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="INGRESE UN NUMERO"
-        android:textColor="#7B1FA2"
+        android:textColor="#FAF6F6"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.286"
+        tools:fontFamily="serif" />
 
     <TextView
         android:id="@+id/lbling2"
@@ -43,19 +45,20 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="SU NUMERO ES:"
-        android:textColor="#7B1FA2"
+        android:textColor="#FAF6F6"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintVertical_bias="0.522"
+        tools:fontFamily="serif" />
 
     <EditText
         android:id="@+id/txtnum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="52dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +66,8 @@
         app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintVertical_bias="0.395"
+        tools:text="........" />
 
     <EditText
         android:id="@+id/txtresult"
@@ -76,13 +80,18 @@
         app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.657"
+        tools:text="........" />
 
     <Button
         android:id="@+id/btnveryfi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="VERIFICAR"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#FAF6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.264"
@@ -94,7 +103,11 @@
         android:id="@+id/btnvolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="VOLVER"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#FAF6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.722"

@@ -4,74 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#93C4DA"
     tools:context=".TriangulosActivity">
 
     <EditText
         android:id="@+id/txtBase"
-        android:layout_width="102dp"
+        android:layout_width="123dp"
         android:layout_height="60dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="276dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="......." />
 
     <TextView
         android:id="@+id/lblTitulo"
-        android:layout_width="246dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="253dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="serif"
         android:text="Area de los Triangulos"
+        android:textAlignment="center"
+        android:textColor="#F6F2F2"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtAltura"
-        android:layout_width="103dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="127dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="176dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="......" />
 
     <TextView
         android:id="@+id/lblAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="132dp"
+        android:fontFamily="serif"
         android:text="Altura"
+        android:textColor="#F6F2F2"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txtAltura"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintVertical_bias="0.697" />
 
     <TextView
         android:id="@+id/lblBase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="184dp"
+        android:fontFamily="serif"
         android:text="Base"
+        android:textColor="#F6F2F2"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txtBase"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnEquilatero"
-        android:layout_width="127dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="316dp"
+        android:layout_width="151dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="568dp"
+        android:fontFamily="serif"
         android:onClick="CalcularEquilatero"
         android:text="Equilatero"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F6F2F2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,10 +97,14 @@
         android:id="@+id/btnEscaleno"
         android:layout_width="134dp"
         android:layout_height="62dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="460dp"
+        android:fontFamily="serif"
         android:onClick="CalcularEscaleno"
         android:text="Escaleno"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F6F2F2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,31 +112,42 @@
         android:id="@+id/lblResultado"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginStart="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597" />
+        app:layout_constraintVertical_bias="0.458"
+        tools:text="......" />
 
     <Button
         android:id="@+id/btnIsoceles"
         android:layout_width="136dp"
         android:layout_height="62dp"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="676dp"
+        android:fontFamily="serif"
         android:onClick="CalcularIsoceles"
         android:text="Isoceles"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F6F2F2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnRegresar"
-        android:layout_width="120dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
         android:text="Regresar"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        app:backgroundTint="#F6F2F2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
