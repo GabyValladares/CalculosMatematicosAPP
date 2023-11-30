@@ -20,6 +20,10 @@ public class MenuOperaciones extends AppCompatActivity {
 
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
+
+
+        Button btOperacionesBasicas = findViewById(R.id.btnOperacionesBasicas);
+
         ImageView gifBackground = findViewById(R.id.gifBackground);
         Button button7 = findViewById(R.id.button7);
         Button btnPrimos = findViewById(R.id.btnNPrimos);
@@ -34,8 +38,6 @@ public class MenuOperaciones extends AppCompatActivity {
 
         Button button2 = findViewById(R.id.button2);
         Button btn_aldaz = findViewById(R.id.btn_aldaz);
-
-
 
 
         // Configurar el título
@@ -60,10 +62,23 @@ public class MenuOperaciones extends AppCompatActivity {
         // Configurar el OnClickListener para el Button2
 
         button2.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View v) {
+                                           // Abrir la actividad MainActivitySumar
+                                           Intent intent = new Intent(MenuOperaciones.this, MainNumerosPerfectos.class);
+                                          // Glide.with(this)
+                                            //       .asGif()
+                                              //     .load(R.drawable.lineas)
+                                                //   .into(gifBackground);
+                                       }
+                                   });
+
+        btOperacionesBasicas.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
-            public void onClick(View v) {
-                // Abrir la actividad MainActivitySumar
-                Intent intent = new Intent(MenuOperaciones.this, MainNumerosPerfectos.class);
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuOperaciones.this, BasicasActivity.class);
                 startActivity(intent);
             }
         });
@@ -97,6 +112,14 @@ public class MenuOperaciones extends AppCompatActivity {
         });
 
         // Configurar el OnClickListener para btnPrimos
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+            }
+        });
+
         btnPrimos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,6 +133,7 @@ public class MenuOperaciones extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuOperaciones.this, ComprobacionDePrimos.class);
+
                 startActivity(intent);
             }
         });
@@ -150,4 +174,5 @@ public class MenuOperaciones extends AppCompatActivity {
         Intent in = new Intent(MenuOperaciones.this, FibonacciActivity.class);
         startActivity(in);
     }
-}
+    }
+

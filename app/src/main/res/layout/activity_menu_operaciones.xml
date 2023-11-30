@@ -35,6 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="0dp"
@@ -84,7 +85,7 @@
         android:text="FORMULA GENERAL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/btnOperacionesBasicas"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -101,13 +102,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="87dp"
+        android:id="@+id/btnOperacionesBasicas"
+        android:layout_width="200dp"
+        android:layout_height="81dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="236dp"
-        android:text="Button"
         app:layout_constraintEnd_toStartOf="@+id/btnformulageneral"
+        android:text="Operaciones Básicas"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
