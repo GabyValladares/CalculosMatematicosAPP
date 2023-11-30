@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MenuOperaciones extends AppCompatActivity {
 
     @Override
@@ -28,8 +29,12 @@ public class MenuOperaciones extends AppCompatActivity {
         Button button3 = findViewById(R.id.btnPentagono);
         Button btformulag = findViewById(R.id.btnformulageneral);
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
+
+        Button trapecio = findViewById(R.id.btnIrTrapecio);
+
         Button button2 = findViewById(R.id.button2);
         Button btn_aldaz = findViewById(R.id.btn_aldaz);
+
 
 
 
@@ -42,16 +47,17 @@ public class MenuOperaciones extends AppCompatActivity {
             //    .load(R.drawable.lineas)
               //  .into(gifBackground);
 
-        // Configurar el OnClickListener para el Button2
-        //button2.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-           // public void onClick(View v) {
-             //   Intent intent = new Intent(MenuOperaciones.this, MainActivitySumar.class);
-               // startActivity(intent);
-           // }
-        //});
 
         // Configurar el OnClickListener para el Button3 (Pentágono)
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
+                startActivity(intent);
+           }
+        });
+
+        // Configurar el OnClickListener para el Button2
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,15 +73,6 @@ public class MenuOperaciones extends AppCompatActivity {
             public void onClick(View v) {
                 // Abrir la actividad MainActivitySumar
                 Intent intent = new Intent(MenuOperaciones.this, exponenciales.class);
-                startActivity(intent);
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Abrir la actividad MainActivitySumar
-                Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
                 startActivity(intent);
             }
         });
@@ -129,9 +126,16 @@ public class MenuOperaciones extends AppCompatActivity {
         btnJefersonY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Abrir la actividad Factorial
                 Intent intent = new Intent(MenuOperaciones.this, Factorial.class);
                 startActivity(intent);
+            }
+        });
+
+        trapecio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inte = new Intent(MenuOperaciones.this, TrapecioActivity.class);
+                startActivity(inte);
             }
         });
     }
