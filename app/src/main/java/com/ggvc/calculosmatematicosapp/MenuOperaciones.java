@@ -37,6 +37,7 @@ public class MenuOperaciones extends AppCompatActivity {
         Button trapecio = findViewById(R.id.btnIrTrapecio);
 
         Button button2 = findViewById(R.id.button2);
+        Button btn_aldaz = findViewById(R.id.btn_aldaz);
 
         // Configurar el título
         titleTextView.setText("ELIJA LA OPERACION QUE DESEA REALIZAR");
@@ -52,6 +53,14 @@ public class MenuOperaciones extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuOperaciones.this, Area_Perimetro_Pentagono.class);
+                startActivity(intent);
+            }
+        });
+        btn_aldaz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir la actividad MainActivitySumar
+                Intent intent = new Intent(MenuOperaciones.this, exponenciales.class);
                 startActivity(intent);
             }
         });

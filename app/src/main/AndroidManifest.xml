@@ -13,29 +13,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculosMatematicosAPP"
         tools:targetApi="31">
-
         <activity
-
-
+            android:name=".exponenciales"
+            android:exported="false" />
+        <activity
             android:name=".MainNumerosPerfectos"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".TrapecioActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".NumerosPrimos"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".FormulaGeneral"
             android:exported="false" />
         <activity
             android:name=".TrianguloActivity"
             android:exported="false" />
-
-
         <activity
             android:name=".MultiplicacionMonomios"
             android:exported="false" />
@@ -44,31 +42,25 @@
             android:exported="false" />
         <activity
             android:name=".TinomioCuadradoPerfecto"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ComprobacionDePrimos"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".FibonacciActivity"
             android:exported="false" />
         <activity
             android:name=".Factorial"
-            android:exported="false"/>
-
-
-
+            android:exported="false" />
         <activity
             android:name=".BasicasActivity"
-            android:exported="false">
-
-         </activity>
-
-
-        <activity android:name=".MenuOperaciones"
-                   android:exported="true">
-
+            android:exported="false"></activity>
+        <activity
+            android:name=".MenuOperaciones"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -76,9 +68,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-
     </application>
-
 
 </manifest>
