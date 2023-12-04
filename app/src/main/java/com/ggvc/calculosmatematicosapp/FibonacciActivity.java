@@ -32,8 +32,8 @@ public class FibonacciActivity extends AppCompatActivity {
                 textView.setText(fibonacci(Integer.parseInt(editText.getText().toString())));
             }
         });
-
     }
+
     private String fibonacci(int n){
         String text = "";
         ArrayList<BigInteger> fib = new ArrayList<>();
@@ -41,12 +41,15 @@ public class FibonacciActivity extends AppCompatActivity {
         BigInteger second = new BigInteger("1");
         fib.add(first);
         fib.add(second);
-        for (int i = 1; i < n; i++){
-            fib.add(fib.get(1).add(fib.get(i - 1)));
+
+        for (int i = 2; i < n; i++){
+            fib.add(fib.get(i - 1).add(fib.get(i - 2)));
         }
-        for (int i = 1; i<= n; i++){
-            text = text + i + ". " + fib.get(i) + "\n";
+
+        for (int i = 0; i < n; i++){
+            text = text + (i + 1) + ". " + fib.get(i) + "\n";
         }
+
         return  text;
     }
 

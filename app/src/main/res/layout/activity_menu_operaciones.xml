@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/_a4acbb265fd2e3c04cf41f159c0cf48"
     tools:context=".MenuOperaciones">
-
-    <ImageView
-        android:id="@+id/gifBackground"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lineas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -27,8 +14,8 @@
         android:layout_marginTop="32dp"
         android:text="ELIJA LA OPERACION QUE DESEA REALIZAR"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
+        android:textColor="#00BCD4"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
@@ -53,7 +40,8 @@
         android:layout_width="0dp"
         android:layout_height="94dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/teal_200"
         android:text="NUMEROS PERFECTOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -65,14 +53,13 @@
         android:id="@+id/btn_fibonacci"
         android:layout_width="331dp"
         android:layout_height="71dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="fibonacci"
         android:text="FIBONACCI"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gifBackground"
-        app:layout_constraintVertical_bias="0.979"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -80,11 +67,12 @@
         android:layout_width="0dp"
         android:layout_height="85dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="216dp"
+        android:backgroundTint="@color/teal_200"
         android:text="FORMULA GENERAL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/btnOperacionesBasicas"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -93,6 +81,7 @@
         android:layout_height="81dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="404dp"
+        android:backgroundTint="@color/teal_200"
         android:text="Trapecio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -101,12 +90,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="87dp"
+        android:id="@+id/btnOperacionesBasicas"
+        android:layout_width="200dp"
+        android:layout_height="81dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="236dp"
-        android:text="Button"
+        android:layout_marginTop="216dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="OPERACIONES BASICAS"
         app:layout_constraintEnd_toStartOf="@+id/btnformulageneral"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,19 +107,20 @@
         android:layout_width="219dp"
         android:layout_height="80dp"
         android:layout_marginTop="560dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="pitagoras"
-        android:text="Pitagoras"
+        android:text="PITAGORAS"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button7"
-
         android:layout_width="218dp"
         android:layout_height="71dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="408dp"
+        android:backgroundTint="@color/teal_200"
         android:text="Area Triangulo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -141,6 +132,7 @@
         android:layout_height="74dp"
         android:layout_marginTop="480dp"
         android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/teal_200"
         android:text="Numeros Primos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
@@ -152,6 +144,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="560dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/teal_200"
         android:text="NUMEROS PRIMOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
@@ -163,6 +156,7 @@
         android:layout_height="83dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="472dp"
+        android:backgroundTint="@color/teal_200"
         android:text="PENTAGONO"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -172,36 +166,37 @@
         android:id="@+id/btnTrinomio"
         android:layout_width="0dp"
         android:layout_height="94dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="144dp"
-        android:text="Trinomio-Monomio"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="TRINOMIO-MONOMIO"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnJefersonY"
-        android:layout_width="0dp"
-        android:layout_height="89dp"
+        android:layout_width="211dp"
+        android:layout_height="79dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="320dp"
-        android:text="Operacion Factorial"
+        android:layout_marginTop="312dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="OPERACION FACTORIAL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/btn_aldaz"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="0dp"
-        android:layout_height="86dp"
+        android:id="@+id/btn_aldaz"
+        android:layout_width="191dp"
+        android:layout_height="81dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="320dp"
-        android:text="Button"
+        android:layout_marginTop="312dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="EXPONENCIALES"
         app:layout_constraintEnd_toStartOf="@+id/btnJefersonY"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

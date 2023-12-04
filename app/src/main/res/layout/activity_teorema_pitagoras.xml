@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E7F4FA"
+    android:background="@drawable/dragon_ball_fondo_3"
     android:onClick="calcula"
     tools:context=".teoremaPitagoras">
 
@@ -24,14 +24,14 @@
 
     <TextView
         android:id="@+id/lblTitulo"
-        android:layout_width="244dp"
-        android:layout_height="69dp"
+        android:layout_width="280dp"
+        android:layout_height="84dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="84dp"
         android:text="TEOREMA DE PITAGORAS"
         android:textAlignment="center"
-        android:textColor="#121212"
-        android:textSize="16sp"
+        android:textColor="#00BCD4"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +44,7 @@
         android:layout_marginEnd="28dp"
         android:text="Ingrese  Lado A"
         android:textAlignment="center"
-        android:textColor="#171616"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtladoA"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,7 +56,7 @@
         android:layout_marginEnd="28dp"
         android:text="Ingrese  Lado B"
         android:textAlignment="center"
-        android:textColor="#121111"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtladoB"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +68,7 @@
         android:layout_marginEnd="24dp"
         android:text="Ingrese  Lado C"
         android:textAlignment="center"
-        android:textColor="#131313"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtladoC"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -110,8 +110,8 @@
         android:onClick="calcula"
         android:text="CALCULAR"
         android:textAlignment="center"
-        android:textColor="#1B1919"
-        app:backgroundTint="#CFB1B1"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/teal_200"
         app:iconTint="#FFF6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
