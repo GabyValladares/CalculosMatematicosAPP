@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="TrianguloActivity">
 
+
+
     <EditText
         android:id="@+id/txtBase"
         android:layout_width="166dp"
@@ -16,6 +18,8 @@
         android:hint="@string/app_name"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -25,6 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Area de los Triangulos"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,6 +43,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.114" />
@@ -49,6 +55,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="132dp"
         android:text="Altura"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtAltura"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +69,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="184dp"
         android:text="Base"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtBase"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +101,7 @@
         android:id="@+id/lblResultado"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginStart="80dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
