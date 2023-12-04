@@ -198,13 +198,12 @@
         android:layout_width="0dp"
         android:layout_height="86dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="328dp"
         android:text="Button"
         app:layout_constraintEnd_toStartOf="@+id/btnJefersonY"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

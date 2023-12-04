@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TriangulosActivity">
+    tools:context="TrianguloActivity">
 
     <EditText
         android:id="@+id/txtBase"
-        android:layout_width="102dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="188dp"
+        android:layout_width="166dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="148dp"
         android:ems="10"
+        android:hint="@string/app_name"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_width="246dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Area de los Triangulos"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,14 +31,16 @@
 
     <EditText
         android:id="@+id/txtAltura"
-        android:layout_width="103dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="148dp"
+        android:layout_height="78dp"
         android:ems="10"
         android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
 
     <TextView
         android:id="@+id/lblAltura"
@@ -90,18 +93,18 @@
         android:id="@+id/lblResultado"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597" />
+        app:layout_constraintVertical_bias="0.386" />
 
     <Button
         android:id="@+id/btnIsoceles"
         android:layout_width="136dp"
         android:layout_height="62dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="168dp"
         android:onClick="CalcularIsoceles"
         android:text="Isoceles"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,8 +112,8 @@
 
     <Button
         android:id="@+id/btnRegresar"
-        android:layout_width="120dp"
-        android:layout_height="39dp"
+        android:layout_width="128dp"
+        android:layout_height="63dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:text="Regresar"
