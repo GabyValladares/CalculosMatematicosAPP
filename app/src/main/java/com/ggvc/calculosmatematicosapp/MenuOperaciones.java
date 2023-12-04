@@ -2,6 +2,7 @@ package com.ggvc.calculosmatematicosapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
@@ -17,6 +18,11 @@ public class MenuOperaciones extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_operaciones);
+
+        // Dentro de tu actividad MenuOperaciones.java
+        int themeResId = getResources().getIdentifier("Theme.CalculosMatematicosAPP", "style", getPackageName());
+        Log.d("ThemeDebug", "Theme ResID: " + themeResId);
+
 
         // Obtener referencias a los elementos de la interfaz
         TextView titleTextView = findViewById(R.id.titleTextView);
@@ -155,4 +161,9 @@ public class MenuOperaciones extends AppCompatActivity {
         Intent in = new Intent(MenuOperaciones.this, FibonacciActivity.class);
         startActivity(in);
     }
+
+
+
 }
+
+
