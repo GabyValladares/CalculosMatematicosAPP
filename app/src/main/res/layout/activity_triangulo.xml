@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/_8706326_rm251_mind_01_f"
     tools:context=".TriangulosActivity">
 
     <EditText
@@ -14,6 +15,7 @@
         android:layout_marginTop="188dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +26,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Area de los Triangulos"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,6 +39,7 @@
         android:layout_marginTop="100dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,6 +50,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="132dp"
         android:text="Altura"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtAltura"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +64,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="184dp"
         android:text="Base"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtBase"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,6 +97,7 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginStart="64dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

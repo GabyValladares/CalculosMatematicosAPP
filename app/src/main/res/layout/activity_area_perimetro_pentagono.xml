@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0B0A0A"
+    android:background="@drawable/_8706326_rm251_mind_01_f"
     tools:context=".Area_Perimetro_Pentagono">
 
     <TextView
@@ -39,8 +39,8 @@
 
     <EditText
         android:id="@+id/idResMulti"
-        android:layout_width="74dp"
-        android:layout_height="46dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:inputType="text"
         android:textColor="#FAF7F7"
@@ -53,17 +53,17 @@
 
     <EditText
         android:id="@+id/idArespuesta"
-        android:layout_width="78dp"
-        android:layout_height="45dp"
+        android:layout_width="84dp"
+        android:layout_height="49dp"
         android:ems="10"
         android:inputType="text"
         android:textColor="#F3ECEC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.934" />
+        app:layout_constraintVertical_bias="0.935" />
 
     <TextView
         android:id="@+id/txtMULTIPLICACION"
@@ -199,7 +199,7 @@
 
     <EditText
         android:id="@+id/id_lado"
-        android:layout_width="66dp"
+        android:layout_width="78dp"
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
@@ -209,11 +209,12 @@
         app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.499"
+        tools:text="lado" />
 
     <EditText
         android:id="@+id/id_Ptotal"
-        android:layout_width="66dp"
+        android:layout_width="96dp"
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
@@ -223,7 +224,8 @@
         app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintVertical_bias="0.573"
+        tools:text="Ptotal" />
 
     <TextView
         android:id="@+id/textView3"
@@ -271,8 +273,8 @@
 
     <EditText
         android:id="@+id/idPArea"
-        android:layout_width="70dp"
-        android:layout_height="46dp"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="text"
         android:textColor="#F6F1F1"
@@ -281,11 +283,12 @@
         app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.752"
+        tools:text="PArea" />
 
     <EditText
         android:id="@+id/idArea"
-        android:layout_width="74dp"
+        android:layout_width="81dp"
         android:layout_height="43dp"
         android:ems="10"
         android:inputType="text"
@@ -295,7 +298,8 @@
         app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.752"
+        tools:text="Area" />
 
     <TextView
         android:id="@+id/txtSignoPor"
@@ -315,8 +319,8 @@
 
     <Button
         android:id="@+id/btnArea"
-        android:layout_width="81dp"
-        android:layout_height="56dp"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
         android:onClick="calculararea"
         android:text="AREA"
         android:textColor="#F80303"
@@ -324,10 +328,10 @@
         app:backgroundTint="#E9DFDF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.909" />
 
     <Button
         android:id="@+id/btnPerimetro"
@@ -347,8 +351,8 @@
 
     <Button
         android:id="@+id/btnAtras"
-        android:layout_width="87dp"
-        android:layout_height="39dp"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
         android:text="ATRAS"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

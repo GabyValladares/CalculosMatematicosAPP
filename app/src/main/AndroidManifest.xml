@@ -7,13 +7,16 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/tigresito"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/tigresito"
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculosMatematicosAPP"
         tools:targetApi="31">
 
+        <activity
+            android:name=".MainNumerosPerfectos"
+            android:exported="false"/>
         <activity
             android:name=".TrapecioActivity"
             android:exported="false"/>
@@ -28,6 +31,13 @@
             android:exported="false" />
         <activity
             android:name=".TrianguloActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".exponenciales"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitySumar"
             android:exported="false" />
         <activity
             android:name=".MultiplicacionMonomios"
@@ -48,6 +58,10 @@
             android:name=".Factorial"
             android:exported="false"/>
         <activity
+            android:name=".BasicasActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".MenuOperaciones"
             android:exported="true">
             <intent-filter>
@@ -57,3 +71,4 @@
         </activity>
     </application>
 </manifest>
+

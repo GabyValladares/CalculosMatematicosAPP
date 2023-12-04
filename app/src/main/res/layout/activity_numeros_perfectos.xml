@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bimo"
+    android:background="@drawable/_8706326_rm251_mind_01_f"
     app:guidelineUseRtl="true"
-    tools:context=".MainActivitySumar">
+    tools:context=".MainNumerosPerfectos">
 
 
-    <ImageView
-        android:id="@+id/backgroundImageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lineas"
+    <Button
+        android:id="@+id/btnVolverMenu"
+        android:layout_width="217dp"
+        android:layout_height="63dp"
+        android:text="VOLVER"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <TextView
         android:layout_width="211dp"
@@ -60,7 +60,7 @@
         android:ems="10"
         android:gravity="center"
         android:inputType="text"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
