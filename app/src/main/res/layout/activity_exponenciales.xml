@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_8706326_rm251_mind_01_f"
+    android:background="@drawable/perro_jake"
     tools:context=".exponenciales">
 
     <EditText
         android:id="@+id/edtExponente"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="130dp"
         android:backgroundTint="@color/white"
         android:hint="Ingrese el exponente"
         android:textColor="@color/white"
@@ -52,9 +52,9 @@
     <EditText
         android:id="@+id/edtBase"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="66dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="464dp"
+        android:layout_marginBottom="443dp"
         android:backgroundTint="@color/white"
         android:hint="Ingrese el entero"
         android:textColor="@color/white"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_8706326_rm251_mind_01_f"
+    android:background="@drawable/perro_jake"
     tools:context=".FibonacciActivity">
 
     <EditText
@@ -15,7 +15,7 @@
         android:layout_marginBottom="524dp"
         android:ems="10"
         android:inputType="numberSigned"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="NUMERO" />
@@ -35,7 +35,7 @@
         android:layout_height="421dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -60,7 +60,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="636dp"
         android:text="FIBONACCI"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

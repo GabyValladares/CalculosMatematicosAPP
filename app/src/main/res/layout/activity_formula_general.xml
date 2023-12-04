@@ -5,7 +5,7 @@
     android:id="@+id/btnregresar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_8706326_rm251_mind_01_f"
+    android:background="@drawable/perro_jake"
     tools:context=".FormulaGeneral"
     tools:layout_editor_absoluteX="2dp"
     tools:layout_editor_absoluteY="57dp">

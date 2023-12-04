@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_8706326_rm251_mind_01_f"
+    android:background="@drawable/perro_jake"
     tools:context=".ComprobacionDePrimos">
 
     <TextView
@@ -17,18 +17,18 @@
         android:layout_marginBottom="606dp"
         android:fontFamily="monospace"
         android:text="Comprobar Numeros Primos"
-        android:textColor="@color/white"
+        android:textColor="@color/teal_200"
         android:textSize="34sp"
         android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/txtNumero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="62dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="531dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="514dp"
         android:ems="10"
         android:inputType="text"
         android:textColor="@color/white"
@@ -53,7 +53,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="398dp"
-        android:textColor="@color/white"
+        android:backgroundTint="#F88C8C"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -65,7 +66,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="121dp"
         android:layout_marginBottom="301dp"
-        android:textColor="@color/white"
+        android:backgroundTint="#F88C8C"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -77,7 +79,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="83dp"
         android:layout_marginBottom="197dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 

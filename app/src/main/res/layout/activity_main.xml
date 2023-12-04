@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_8706326_rm251_mind_01_f"
+    android:background="@drawable/perro_jake"
     tools:context=".MainActivity">
 
     <TextView
@@ -35,8 +35,8 @@
         android:id="@+id/lblTitulo2"
         android:layout_width="244dp"
         android:layout_height="69dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="48dp"
         android:text="TEOREMA DE PITAGORAS"
         android:textAlignment="center"
         android:textColor="@color/white"
