@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#070707"
+    android:backgroundTint="#070707"
     tools:context=".TriangulosActivity">
 
     <EditText
@@ -14,6 +16,7 @@
         android:layout_marginTop="188dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="#FAF8F8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +27,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="Area de los Triangulos"
+        android:textColor="#FBF9F9"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,6 +40,7 @@
         android:layout_marginTop="100dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="#FAF8F8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,6 +51,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="132dp"
         android:text="Altura"
+        android:textColor="#FBF9F9"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtAltura"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +65,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="184dp"
         android:text="Base"
+        android:textColor="#FBF9F9"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtBase"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +77,7 @@
         android:layout_height="66dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="316dp"
+        android:backgroundTint="#00BCD4"
         android:onClick="CalcularEquilatero"
         android:text="Equilatero"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,6 +89,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="316dp"
+        android:backgroundTint="#00BCD4"
         android:onClick="CalcularEscaleno"
         android:text="Escaleno"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,6 +100,7 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginStart="64dp"
+        android:textColor="#FBFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -102,6 +112,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="140dp"
         android:layout_marginTop="316dp"
+        android:backgroundTint="#00BCD4"
         android:onClick="CalcularIsoceles"
         android:text="Isoceles"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,6 +124,7 @@
         android:layout_height="39dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
+        android:backgroundTint="#00BCD4"
         android:text="Regresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

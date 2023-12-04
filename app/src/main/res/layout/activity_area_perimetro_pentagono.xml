@@ -347,9 +347,9 @@
 
     <Button
         android:id="@+id/btnAtras"
-        android:layout_width="87dp"
-        android:layout_height="39dp"
-        android:text="ATRAS"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:text="VOLVER"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A3F9FB"
+    android:background="@color/black"
     tools:context=".MultiplicacionMonomios">
 
     <Button
@@ -19,7 +19,7 @@
         android:text="REGRESAR"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -34,7 +34,7 @@
         android:text="IR AL TRINOMIO"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -61,6 +61,7 @@
         android:fontFamily="serif-monospace"
         android:text="MULTIPLICACION DE MONOMIOS"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FAF6F6"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -74,6 +75,8 @@
         android:ems="10"
         android:fontFamily="sans-serif-condensed-light"
         android:inputType="text"
+        android:textColor="#FAF6F6"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="numero" />
@@ -87,6 +90,8 @@
         android:ems="10"
         android:fontFamily="sans-serif-condensed-light"
         android:inputType="text"
+        android:textColor="#FAF6F6"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="numero" />
@@ -103,7 +108,7 @@
         android:text="Calcular"
         android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="#0E4CAA"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -113,6 +118,7 @@
         android:layout_height="56dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="500dp"
+        android:textColor="#FBFBFB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,8 @@
         android:id="@+id/backgroundImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#0B0A0A"
+        android:backgroundTint="#090909"
         android:scaleType="centerCrop"
         android:src="@drawable/lineas"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,12 +22,14 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@color/black" />
 
     <Button
         android:id="@+id/btnVolverMenu"
         android:layout_width="217dp"
         android:layout_height="63dp"
+        android:backgroundTint="#00BCD4"
         android:text="VOLVER"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,6 +122,7 @@
         android:id="@+id/btnDividir"
         android:layout_width="92dp"
         android:layout_height="95dp"
+        android:backgroundTint="#00BCD4"
         android:text="OK"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0C0C0C"
     tools:context=".BasicasActivity">
 
     <Button
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="304dp"
         android:layout_marginTop="376dp"
+        android:backgroundTint="#00BCD4"
         android:text="/"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -24,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginTop="376dp"
+        android:backgroundTint="#00BCD4"
         android:text="-"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -36,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="204dp"
         android:layout_marginTop="376dp"
+        android:backgroundTint="#00BCD4"
         android:text="*"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -48,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="376dp"
+        android:backgroundTint="#00BCD4"
         android:text="+"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -74,6 +79,7 @@
         android:layout_marginTop="16dp"
         android:text="OPERACIONES BÁSICAS"
         android:textAlignment="center"
+        android:textColor="#FFFCFC"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

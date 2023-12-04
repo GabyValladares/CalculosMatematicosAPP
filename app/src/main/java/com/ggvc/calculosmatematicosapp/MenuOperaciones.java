@@ -35,6 +35,7 @@ public class MenuOperaciones extends AppCompatActivity {
         Button btnTrinomio = findViewById(R.id.btnTrinomio);
         Button buttonDivision = findViewById(R.id.btn_said);
         Button button3 = findViewById(R.id.btnPentagono);
+        Button btnExponenciales=findViewById(R.id.btnExponenciales);
         Button btformulag = findViewById(R.id.btnformulageneral);
         Button btnJefersonY = findViewById(R.id.btnJefersonY);
 
@@ -145,6 +146,7 @@ public class MenuOperaciones extends AppCompatActivity {
 
     }
 
+
     // Métodos adicionales según tu código original
     public void pitagoras(View v) {
         Intent in = new Intent(MenuOperaciones.this, MainActivity.class);
@@ -155,4 +157,5 @@ public class MenuOperaciones extends AppCompatActivity {
         Intent in = new Intent(MenuOperaciones.this, FibonacciActivity.class);
         startActivity(in);
     }
+
 }

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_foreground"
+    android:background="@color/black"
+    android:backgroundTint="#070707"
+    android:foregroundTint="#1B1A1A"
     tools:context=".ComprobacionDePrimos">
 
     <TextView
@@ -15,9 +17,11 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="606dp"
+        android:drawableTint="#121212"
         android:fontFamily="monospace"
+        android:foregroundTint="#070707"
         android:text="Comprobar Numeros Primos"
-        android:textColor="#E91E63"
+        android:textColor="#FDFCFC"
         android:textSize="34sp"
         android:textStyle="bold|italic" />
 
@@ -30,7 +34,8 @@
         android:layout_marginEnd="102dp"
         android:layout_marginBottom="531dp"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#FBFBFB" />
 
     <Button
         android:id="@+id/button"
@@ -40,8 +45,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="151dp"
         android:layout_marginBottom="89dp"
+        android:foregroundTint="#00BCD4"
         android:text="Calcular"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="#00BCD4" />
 
     <TextView
         android:id="@+id/lblRespuesta"
@@ -51,7 +57,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="398dp"
-        android:textColor="#27272B"
+        android:textColor="#FCFCFF"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -88,6 +94,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="279dp"
         android:layout_marginBottom="17dp"
+        android:backgroundTint="#00BCD4"
+        android:drawableTint="#00BCD4"
+        android:foregroundTint="#00BCD4"
         android:text="Regresar" />
 
 </RelativeLayout>
