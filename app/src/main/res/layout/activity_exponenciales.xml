@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exponenciales">
+    <!-- activity_exponenciales.xml -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/spiderman"
+        tools:context=".exponenciales">
+
+        <EditText
+            android:id="@+id/edtExponente"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="137dp"
+            android:backgroundTint="@color/white"
+            android:hint="Ingrese el exponente"
+            android:textColor="@color/design_default_color_error"
+            tools:text="EXPONENTE" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="154dp"
+            android:layout_marginBottom="173dp"
+            android:backgroundTint="@color/material_dynamic_secondary20"
+            android:text="Regresar"
+            android:textColor="@color/design_default_color_error" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="324dp"
+            android:layout_marginEnd="157dp"
+            android:backgroundTint="@color/material_dynamic_secondary20"
+            android:text="Calcular"
+            android:textColor="@color/design_default_color_error" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginBottom="249dp"
+            android:textColor="@color/design_default_color_error"
+            tools:text="RESULTADO" />
+
+        <EditText
+            android:id="@+id/edtBase"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="461dp"
+            android:backgroundTint="@color/white"
+            android:hint="Ingrese el entero"
+            android:textColor="@color/design_default_color_error"
+            tools:text="BASE" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="74dp"
+            android:text="EXPONENCIALES"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
