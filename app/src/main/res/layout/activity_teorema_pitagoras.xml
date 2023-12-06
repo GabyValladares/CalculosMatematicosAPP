@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="#090909"
     android:onClick="calcula"
-    tools:context=".teoremaPitagoras">
+    tools:context=".teoremaPitagoras"
+    tools:ignore="OnClick">
 
     <EditText
         android:id="@+id/txtladoC"

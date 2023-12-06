@@ -81,7 +81,8 @@
         android:onClick="CalcularEquilatero"
         android:text="Equilatero"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btnEscaleno"
@@ -93,7 +94,8 @@
         android:onClick="CalcularEscaleno"
         android:text="Escaleno"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/lblResultado"
@@ -116,7 +118,8 @@
         android:onClick="CalcularIsoceles"
         android:text="Isoceles"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btnRegresar"
